@@ -13,11 +13,9 @@ def setup_eea_exhibit():
     """
     fiveconfigure.debug_mode = True
     import Products.Five
-    import Products.FiveSite
     import eea.exhibit
     zcml.load_config('meta.zcml', Products.Five)
     zcml.load_config('configure.zcml', Products.Five)
-    zcml.load_config('configure.zcml', Products.FiveSite)
     zcml.load_config('configure.zcml', eea.exhibit)
     fiveconfigure.debug_mode = False
 
