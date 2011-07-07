@@ -1,15 +1,19 @@
 Changelog
 =========
-[Alexandru Ghica - alec.ghica@eaudeweb.ro]
-[Alin Voinea - alin.voinea@eaudeweb.ro]
-[David Ichim - david.ichim@eaudeweb.ro]
-[Antonio De Marinis - demarinis@eea.europa.eu]
+
 
 4.0-dev - (unreleased)
 ----------------------
- * Feature: ported package to plone 4.0.4 [ichimdav #4233]
+
+* Feature: Added upgrade steps
+  [voineali #4392]
+
+* Feature: ported package to plone 4.0.4
+  [ichimdav #4233]
+
 
 1.0 - (2011-03-16)
 ------------------
-* Initial release
 
+* Initial release
+  [voineali]
