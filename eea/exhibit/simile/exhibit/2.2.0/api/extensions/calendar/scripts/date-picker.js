@@ -236,8 +236,8 @@ Exhibit.DatePickerFacet.DatePicker.prototype.buildCell = function(date, cssClass
 Exhibit.DatePickerFacet.DatePicker.prototype.highlight = function(elmt) {
   if (this._highlight) {
     // remove all highlighted classes
-    $("td.day").each(function(i){
-      $('#'+this.id).removeClass('highlight');
+    jQuery("td.day").each(function(i){
+      jQuery('#'+this.id).removeClass('highlight');
     });
     
     // get end points
@@ -253,7 +253,7 @@ Exhibit.DatePickerFacet.DatePicker.prototype.highlight = function(elmt) {
     
     // Highlight all dates in range
     while(center <= end) {
-      $('#'+ Exhibit.DateUtil.formatDate(center, this._facet._dateFormat).replace(/[^a-zA-Z 0-9]+/g,'')).addClass('highlight');
+      jQuery('#'+ Exhibit.DateUtil.formatDate(center, this._facet._dateFormat).replace(/[^a-zA-Z 0-9]+/g,'')).addClass('highlight');
       center.setDate(center.getDate()+1);
     }
     
@@ -264,7 +264,7 @@ Exhibit.DatePickerFacet.DatePicker.prototype.startHighlighting = function(date) 
   this._highlight = date;
   dateObj = Exhibit.DateUtil.parseDate(date);
   elmtId = Exhibit.DateUtil.formatDate(dateObj, this._facet._dateFormat).replace(/[^a-zA-Z 0-9]+/g,'');
-  elmt = $('#'+ elmtId).addClass('highlight');
+  elmt = jQuery('#'+ elmtId).addClass('highlight');
 };
 
 Exhibit.DatePickerFacet.DatePicker.prototype.stopHighlighting = function(date) {

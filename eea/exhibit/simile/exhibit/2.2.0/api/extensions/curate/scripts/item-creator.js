@@ -51,7 +51,7 @@ Exhibit.ItemCreator.makeNewItemBox = function(uiContext, item, opts) {
     var db = uiContext.getDatabase();
     opts = opts || {};
     
-    var box = $("<div>" +
+    var box = jQuery("<div>" +
         "<h1 class='exhibit-focusDialog-header' id='boxHeader'></h1>" +
         "<div class='exhibit-focusDialog-viewContainer' id='itemContainer'></div>" +
         "<div class='exhibit-focusDialog-controls'>" +
