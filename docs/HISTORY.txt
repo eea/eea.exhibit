@@ -1,8 +1,8 @@
 Changelog
 =========
 
-4.0-dev - (unreleased)
-----------------------
+4.0 - (2011-11-07)
+------------------
 
 * Bugfix: Fixed IE JS errors, fixed code that uses jQuery to avoid conflicts
   with other JS frameworks
@@ -11,7 +11,7 @@ Changelog
 * Feature: Added upgrade steps
   [voineali #4392]
 
-* Feature: ported package to plone 4.0.4
+* Feature: ported package to plone 4.x
   [ichimdav #4233]
 
 
