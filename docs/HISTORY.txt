@@ -1,11 +1,12 @@
 Changelog
 =========
 
-
 4.0-dev - (unreleased)
 ----------------------
+
 * Bugfix: Fixed IE JS errors, fixed code that uses jQuery to avoid conflicts
-  with other JS frameworks [szabozo0 #4542]
+  with other JS frameworks
+  [szabozo0 #4542]
 
 * Feature: Added upgrade steps
   [voineali #4392]
