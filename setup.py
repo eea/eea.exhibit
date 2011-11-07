@@ -8,7 +8,7 @@ NAME = 'eea.exhibit'
 PATH = NAME.split('.') + ['version.txt']
 VERSION = open(join(*PATH)).read().strip()
 
-setup(name='EEA Exhibit',
+setup(name=NAME,
       version=VERSION,
       description=(
           "EEA Exhibit provides Simile Widgets Exhibit JS libraries as Zope 3 "
