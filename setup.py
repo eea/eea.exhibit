@@ -8,9 +8,11 @@ NAME = 'eea.exhibit'
 PATH = NAME.split('.') + ['version.txt']
 VERSION = open(join(*PATH)).read().strip()
 
-setup(name=NAME,
+setup(name='EEA Exhibit',
       version=VERSION,
-      description="Exhibit JS libs",
+      description=(
+          "EEA Exhibit provides Simile Widgets Exhibit JS libraries as Zope 3 "
+          "resources."),
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       classifiers=[
