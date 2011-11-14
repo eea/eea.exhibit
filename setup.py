@@ -10,7 +10,9 @@ VERSION = open(join(*PATH)).read().strip()
 
 setup(name=NAME,
       version=VERSION,
-      description="Exhibit JS libs",
+      description=(
+          "EEA Exhibit provides Simile Widgets Exhibit JS libraries as Zope 3 "
+          "resources."),
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       classifiers=[

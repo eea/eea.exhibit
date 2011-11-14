@@ -32,7 +32,7 @@ Exhibit.SubmissionBackend.SubmissionDefaults = {
 };
 
 Exhibit.SubmissionBackend.getOutputOptions = function() {
-    var links = $('head link[rel="exhibit/output"]');
+    var links = jQuery('head link[rel="exhibit/output"]');
     if (links.length == 0) {
         throw "No output link provided";
     } else if (links.length > 1) {
@@ -84,7 +84,7 @@ Exhibit.SubmissionBackend._submitChanges = function(changes, options, fSuccess, 
         }
     }
     
-    $.ajax({
+    jQuery.ajax({
         url: options.url,
         data: options.data,
         dataType: 'jsonp',

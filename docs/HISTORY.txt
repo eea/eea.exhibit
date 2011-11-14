@@ -1,13 +1,22 @@
 Changelog
 =========
-[Alexandru Ghica - alec.ghica@eaudeweb.ro]
-[Alin Voinea - alin.voinea@eaudeweb.ro]
-[Antonio De Marinis - demarinis@eea.europa.eu]
 
-1.1-dev - (unreleased)
-----------------------
+4.0 - (2011-11-07)
+------------------
+
+* Bugfix: Fixed IE JS errors, fixed code that uses jQuery to avoid conflicts
+  with other JS frameworks
+  [szabozo0 #4542]
+
+* Feature: Added upgrade steps
+  [voineali #4392]
+
+* Feature: ported package to plone 4.x
+  [ichimdav #4233]
+
 
 1.0 - (2011-03-16)
 ------------------
-* Initial release
 
+* Initial release
+  [voineali]

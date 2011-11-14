@@ -1,3 +1,5 @@
+""" Doctests
+"""
 import doctest
 import unittest
 from eea.exhibit.tests.base import EEAExhibitFunctionalTestCase
