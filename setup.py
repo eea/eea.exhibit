@@ -30,6 +30,7 @@ setup(name=NAME,
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'eea.app.visualization',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
