@@ -5,6 +5,7 @@
   <include package="eea.app.visualization" />
   <include file="profiles.zcml" />
   <include package=".simile" />
+  <include package=".babel" />
   <include package=".facets" />
   <include package=".views" />
 
