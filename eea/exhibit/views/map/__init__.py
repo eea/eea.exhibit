@@ -1,0 +1,2 @@
+""" Exhibit map view
+"""

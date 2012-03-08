@@ -6,6 +6,7 @@
   <include file="profiles.zcml" />
   <include package=".simile" />
   <include package=".facets" />
+  <include package=".views" />
 
   <include package=".upgrades" />
 

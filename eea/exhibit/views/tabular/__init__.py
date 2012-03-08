@@ -1,0 +1,2 @@
+""" Tabular exhibit view
+"""

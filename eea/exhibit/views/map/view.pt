@@ -1,0 +1,8 @@
+<tal:view define="latlng python:view.latlng">
+<div ex:role="view"
+  ex:viewClass="Map"
+  tal:attributes="
+    ex:latlng string:.$latlng">
+</div>
+
+</tal:view>
