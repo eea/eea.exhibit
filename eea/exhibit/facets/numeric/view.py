@@ -1,0 +1,2 @@
+""" Numeric facets view module
+"""
