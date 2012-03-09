@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
 <metadata>
-   <description>EEA Exhibit profile</description>
-   <version>4.0</version>
+ <description>EEA Exhibit profile</description>
+ <version>4.0</version>
+ <dependencies>
+  <dependency>profile-eea.app.visualization:default</dependency>
+ </dependencies>
 </metadata>

@@ -30,6 +30,7 @@ setup(name=NAME,
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'rdflib',
           'eea.app.visualization',
           # -*- Extra requirements: -*-
       ],
