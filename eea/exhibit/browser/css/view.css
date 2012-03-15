@@ -1,0 +1,17 @@
+/* Exhibit custom CSS */
+
+.tab-daviz-tabular span {
+    background: url("../../++resource++eea.exhibit.tabular.png") no-repeat;
+}
+
+.tab-daviz-tile span {
+    background: url("../../++resource++eea.exhibit.tile.png") no-repeat;
+}
+
+.tab-daviz-map span {
+    background: url("../../++resource++eea.exhibit.map.png") no-repeat;
+}
+
+.tab-daviz-timeline span {
+    background: url("../../++resource++eea.exhibit.timeline.png") no-repeat;
+}

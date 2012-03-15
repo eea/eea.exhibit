@@ -26,4 +26,6 @@
     handler=".events.timeline_facet_deleted"
     />
 
+  <browser:resource name="eea.exhibit.timeline.png" file="timeline.png" />
+
 </configure>

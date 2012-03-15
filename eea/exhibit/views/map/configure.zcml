@@ -26,4 +26,6 @@
     handler=".events.map_facet_deleted"
     />
 
+  <browser:resource name="eea.exhibit.map.png" file="map.png" />
+
 </configure>

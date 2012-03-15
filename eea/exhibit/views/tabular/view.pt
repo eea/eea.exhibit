@@ -1,3 +1,5 @@
+<div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Live search"></div>
+<div class="daviz-views" ex:role="viewPanel">
 <div ex:role="view"
   ex:viewClass="Tabular"
   ex:cellSpacing="0"
@@ -13,3 +15,4 @@
     ex:columnLabels python:', '.join(labels);
     ex:columnFormats python:', '.join(formats)"
   tal:condition="columns"></div>
+</div>

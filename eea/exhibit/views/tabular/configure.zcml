@@ -26,4 +26,6 @@
     handler=".events.tabular_facet_deleted"
     />
 
+  <browser:resource name="eea.exhibit.tabular.png" file="tabular.png" />
+
 </configure>
