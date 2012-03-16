@@ -1,18 +1,20 @@
-<div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Live search"></div>
-<div class="daviz-views" ex:role="viewPanel">
-<div ex:role="view"
-  ex:viewClass="Tabular"
-  ex:cellSpacing="0"
-  ex:cellPadding="0"
-  ex:tableStyler="DavizTableStyler"
-  ex:rowStyler="DavizTableRowStyler"
-  tal:define="
-    columns python:[col for col in view.columns];
-    labels python:view.labels;
-    formats python:view.formats;"
-  tal:attributes="
-    ex:columns python:', '.join(columns);
-    ex:columnLabels python:', '.join(labels);
-    ex:columnFormats python:', '.join(formats)"
-  tal:condition="columns"></div>
+<div class="daviz-tab-view" tal:attributes="id view/tabname">
+  <div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Live search"></div>
+  <div class="daviz-views" ex:role="viewPanel">
+  <div ex:role="view"
+    ex:viewClass="Tabular"
+    ex:cellSpacing="0"
+    ex:cellPadding="0"
+    ex:tableStyler="DavizTableStyler"
+    ex:rowStyler="DavizTableRowStyler"
+    tal:define="
+      columns python:[col for col in view.columns];
+      labels python:view.labels;
+      formats python:view.formats;"
+    tal:attributes="
+      ex:columns python:', '.join(columns);
+      ex:columnLabels python:', '.join(labels);
+      ex:columnFormats python:', '.join(formats)"
+    tal:condition="columns"></div>
+  </div>
 </div>

@@ -1,11 +1,13 @@
-<div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Live search"></div>
-<div class="daviz-views" ex:role="viewPanel">
-<tal:view define="latlng python:view.latlng">
-<div ex:role="view"
-  ex:viewClass="Map"
-  tal:attributes="
-    ex:latlng string:.$latlng">
-</div>
+<div class="daviz-tab-view" tal:attributes="id view/tabname">
+  <div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Live search"></div>
+  <div class="daviz-views" ex:role="viewPanel">
+  <tal:view define="latlng python:view.latlng">
+  <div ex:role="view"
+    ex:viewClass="Map"
+    tal:attributes="
+      ex:latlng string:.$latlng">
+  </div>
 
-</tal:view>
+  </tal:view>
+  </div>
 </div>

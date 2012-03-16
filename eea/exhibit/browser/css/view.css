@@ -15,3 +15,7 @@
 .tab-daviz-timeline span {
     background: url("../../++resource++eea.exhibit.timeline.png") no-repeat;
 }
+
+.exhibit-text-facet {
+  width: 80%;
+}

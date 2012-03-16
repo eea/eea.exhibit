@@ -1,15 +1,17 @@
-<div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Live search"></div>
-<div class="daviz-views" ex:role="viewPanel">
-<tal:view define="
-  start python:view.start;
-  end python:view.end">
+<div class="daviz-tab-view" tal:attributes="id view/tabname">
+  <div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Live search"></div>
+  <div class="daviz-views" ex:role="viewPanel">
+  <tal:view define="
+    start python:view.start;
+    end python:view.end">
 
-<div
-  ex:role="view"
-  ex:viewClass="Timeline"
-  tal:attributes="
-    ex:start start;
-    ex:end end">
-</div>
-</tal:view>
+  <div
+    ex:role="view"
+    ex:viewClass="Timeline"
+    tal:attributes="
+      ex:start start;
+      ex:end end">
+  </div>
+  </tal:view>
+  </div>
 </div>
