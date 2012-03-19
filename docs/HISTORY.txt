@@ -3,6 +3,9 @@ Changelog
 
 4.2-dev - (unreleased)
 ----------------------
+* Upgrade step: Within "Plone > Site setup > Add-ons" click on
+  upgrade button available for eea.exhibit
+  [voineali #4996]
 * Feature: Refactoring to be able to use this package as a standalone or as
   part of eea.daviz bundle
   [voineali #4996]
