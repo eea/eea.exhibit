@@ -6,6 +6,29 @@ jQuery(document).ready(function(){
     }else{
       jQuery('.daviz-facets').hide();
     }
+
+    // Refresh timeline
+    if(css.indexOf('timeline') !== -1){
+      try{
+        Timeline.getTimelineFromID(0).layout();
+      }catch(timeError){
+        if(window.console !== undefined){
+          console.log(timeError);
+        }
+      }
+    }
+
+    // Refresh map
+    if(css.indexOf('daviz-map') !== -1){
+      try{
+        exhibit.getComponent('daviz-map')._map.checkResize();
+      }catch(mapError){
+        if(window.console !== undefined){
+          console.log(mapError);
+        }
+      }
+    }
+
   };
 
   // Events

@@ -5,6 +5,7 @@
   <div ex:role="view"
     ex:viewClass="Map"
     tal:attributes="
+      id python:view.__name__.replace('.', '-');
       ex:latlng string:.$latlng">
   </div>
 
