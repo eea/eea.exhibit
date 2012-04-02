@@ -1,18 +1,13 @@
-EEA Exhibit
-===========
-EEA Exhibit provides Simile Widgets Exhibit JS libraries as Zope 3 resources.
+Introduction
+============
+EEA Exhibit provides Simile Widgets Exhibit framework integration for
+eea.app.visualization. See eea.daviz package for more details.
 
 
 Contents
 ========
 
 .. contents::
-
-
-Introduction
-============
-EEA Exhibit is a collection of JavaScript libraries.
-See more at http://www.simile-widgets.org/exhibit
 
 
 Source code
