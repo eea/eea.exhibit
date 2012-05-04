@@ -36,12 +36,20 @@ jQuery(document).ready(function(){
     onExhibitTabClick(settings);
   });
 
-  // Call for first tab
+  var index = 0;
   var api = jQuery("ul.chart-tabs").data('tabs');
+  jQuery.each(api.getTabs(), function(idx, tab){
+    if(jQuery(tab).attr('href') == window.location.hash){
+      index = idx;
+      return false;
+    }
+  });
+
+  // Call for first tab
   onExhibitTabClick({
       api: api,
-      tab: api.getTabs()[0],
-      index: 0
+      tab: api.getTabs()[index],
+      index: index
   });
 
 });
