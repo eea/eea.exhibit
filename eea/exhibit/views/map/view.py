@@ -15,3 +15,9 @@ class View(ViewForm):
         """ Return latitude longitude column
         """
         return self.data.get('latlng', '')
+
+    @property
+    def lens(self):
+        """ View custom lens
+        """
+        return self.data.get('lens', '')

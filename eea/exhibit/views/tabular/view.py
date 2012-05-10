@@ -57,3 +57,9 @@ class View(ViewForm):
 
         if self.details:
             yield 'Details'
+
+    @property
+    def lens(self):
+        """ View custom lens
+        """
+        return self.data.get('lens', '')

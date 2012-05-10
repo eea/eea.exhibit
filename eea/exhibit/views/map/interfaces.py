@@ -18,3 +18,11 @@ class IExhibitMapEdit(Interface):
         required=False,
         vocabulary="eea.daviz.vocabularies.FacetsVocabulary"
     )
+    lens = schema.Text(
+        title=u"Lens template",
+        description=(u""
+            "Edit custom exhibit lens. Leave it blank to use the default one. "
+            "See more details "
+            "http://www.simile-widgets.org/wiki/Exhibit/Lens_Templates"),
+        required=False
+    )

@@ -4,9 +4,9 @@
   <tal:view define="
     start python:view.start;
     end python:view.end">
-
-  <div
-    ex:role="view"
+  <div tal:define="lens python:view.lens"
+    tal:condition="lens" tal:replace="structure lens" />
+  <div ex:role="view"
     ex:viewClass="Timeline"
     tal:attributes="
       ex:start start;

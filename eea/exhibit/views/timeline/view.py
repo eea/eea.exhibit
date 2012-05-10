@@ -27,3 +27,9 @@ class View(ViewForm):
         if end:
             return '.%s' % end
         return None
+
+    @property
+    def lens(self):
+        """ View custom lens
+        """
+        return self.data.get('lens', '')

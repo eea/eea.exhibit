@@ -24,3 +24,11 @@ class IExhibitTabularEdit(Interface):
                      "a 'more' link to item details"),
         required=False
     )
+    lens = schema.Text(
+        title=u"Lens template",
+        description=(u""
+            "Edit custom exhibit lens. Leave it blank to use the default one. "
+            "See more details "
+            "http://www.simile-widgets.org/wiki/Exhibit/Lens_Templates"),
+        required=False
+    )

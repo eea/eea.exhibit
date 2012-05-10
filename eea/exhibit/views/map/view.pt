@@ -2,6 +2,8 @@
   <div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Live search"></div>
   <div class="daviz-views" ex:role="viewPanel">
   <tal:view define="latlng python:view.latlng">
+  <div tal:define="lens python:view.lens"
+    tal:condition="lens" tal:replace="structure lens" />
   <div ex:role="view"
     ex:viewClass="Map"
     tal:attributes="
