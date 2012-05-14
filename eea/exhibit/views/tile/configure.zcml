@@ -27,5 +27,6 @@
     />
 
   <browser:resource name="eea.exhibit.tile.png" file="tile.png" />
+  <browser:resource name="daviz.tile.preview.png" file="preview.png" />
 
 </configure>

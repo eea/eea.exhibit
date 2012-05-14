@@ -27,5 +27,6 @@
     />
 
   <browser:resource name="eea.exhibit.map.png" file="map.png" />
+  <browser:resource name="daviz.map.preview.png" file="preview.png" />
 
 </configure>

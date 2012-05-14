@@ -27,5 +27,6 @@
     />
 
   <browser:resource name="eea.exhibit.tabular.png" file="tabular.png" />
+  <browser:resource name="daviz.tabular.preview.png" file="preview.png" />
 
 </configure>
