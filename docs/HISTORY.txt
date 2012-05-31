@@ -3,6 +3,8 @@ Changelog
 
 4.3-dev - (unreleased)
 ----------------------
+* Bug fix: fixed markup of HISTORY.txt file
+  [ciobabog refs #5231]
 * Feature: Added preview images for Exhibit Views
   [voineali refs #5024]
 * Feature: Added possibility to customize lenses for all exhibit views not only
