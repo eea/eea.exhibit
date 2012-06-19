@@ -3,6 +3,8 @@ Changelog
 
 4.4-dev - (unreleased)
 ----------------------
+* Bug Fix: Fixed i18n missing tags in eea.exhibit 
+  [prospchr refs #5162]
 
 4.3 - (2012-06-12)
 ------------------
