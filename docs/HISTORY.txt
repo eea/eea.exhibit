@@ -1,6 +1,13 @@
 Changelog
 =========
 
+6.0-dev - (unreleased)
+----------------------
+* Upgrade step: Within "Plone > Site setup > Add-ons" click on
+  upgrade button available for eea.exhibit
+* Feature: Made this package Plone independent (Zope2 minimal requirements)
+  [voineali refs #5421]
+
 4.5-dev - (unreleased)
 ----------------------
 

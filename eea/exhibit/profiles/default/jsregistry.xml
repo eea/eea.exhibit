@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts">
- <javascript id="++resource++eea.exhibit.view.js" expression="python:'daviz-view.html' in request.URL0" />
- <javascript id="++resource++eea.exhibit.edit.js" expression="python:'daviz-edit.html' in request.URL0" />
+ <!-- No need to register JS resources here anymore. See
+      eea.app.visualization.browser.res.interfaces.py for the new way
+      of registering visualization JS/CSS resources -->
+ <!-- Cleanup -->
+ <javascript id="++resource++eea.exhibit.view.js" remove="True" />
+ <javascript id="++resource++eea.exhibit.edit.js" remove="True" />
 </object>
