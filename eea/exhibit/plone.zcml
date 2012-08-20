@@ -2,10 +2,8 @@
   xmlns="http://namespaces.zope.org/zope"
   i18n_domain="eea">
 
-  <includeDependencies package="." />
+  <include file="common.zcml" />
   <include file="profiles.zcml" />
   <include package=".upgrades" />
-
-  <include file="common.zcml" />
 
 </configure>
