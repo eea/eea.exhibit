@@ -11,6 +11,51 @@ eea.app.visualization. See eea.daviz package for more details.
 .. contents::
 
 
+Installation
+============
+
+zc.buildout
+-----------
+If you are using `zc.buildout`_ and the `plone.recipe.zope2instance`_
+recipe to manage your project, you can do this:
+
+* Update your buildout.cfg file:
+
+  * Add ``eea.exhibit`` to the list of eggs to install
+  * Tell the `plone.recipe.zope2instance`_ recipe to install a ZCML slug
+
+  ::
+
+    [instance]
+    ...
+    eggs =
+      ...
+      eea.exhibit
+
+    zcml =
+      ...
+      eea.exhibit
+
+* Re-run buildout, e.g. with::
+
+  $ ./bin/buildout
+
+You can skip the ZCML slug if you are going to explicitly include the package
+from another package's configure.zcml file.
+
+
+Dependencies
+============
+
+`EEA Exhibit`_ has the following dependencies:
+  - Zope 2.12+
+  - rdflib
+  - `eea.app.visualization`_
+
+
+.. image:: http://eea.github.com/_images/eea.daviz.dependencies.svg
+
+
 Source code
 ===========
 
@@ -38,6 +83,9 @@ More details under docs/License.txt
 Funding
 =======
 
-  EEA_ - European Enviroment Agency (EU)
+  EEA_ - European Environment Agency (EU)
 
 .. _EEA: http://www.eea.europa.eu/
+.. _`eea.app.visualization`: http://eea.github.com/docs/eea.app.visualization
+.. _`plone.recipe.zope2instance`: http://pypi.python.org/pypi/plone.recipe.zope2instance
+.. _`zc.buildout`: http://pypi.python.org/pypi/zc.buildout
