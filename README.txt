@@ -5,7 +5,7 @@ EEA Exhibit provides Simile Widgets Exhibit framework integration for
 eea.app.visualization. See eea.daviz package for more details.
 
 
-.. image:: http://eea.github.com/_static/visualization-layers.svg
+.. image:: http://eea.github.com/_images/eea.daviz.layers.svg
 
 
 .. contents::
