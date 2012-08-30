@@ -1,5 +1,6 @@
-Introduction
-============
+===========
+EEA Exhibit
+===========
 EEA Exhibit provides Simile Widgets Exhibit framework integration for
 eea.app.visualization. See eea.daviz package for more details.
 
