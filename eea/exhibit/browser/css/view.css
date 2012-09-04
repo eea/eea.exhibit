@@ -1,19 +1,19 @@
 /* Exhibit custom CSS */
 
 .tab-daviz-tabular span {
-    background: url("../../++resource++eea.exhibit.tabular.png") no-repeat;
+  background: url("../../++resource++eea.exhibit.tabular.png") no-repeat;
 }
 
 .tab-daviz-tile span {
-    background: url("../../++resource++eea.exhibit.tile.png") no-repeat;
+  background: url("../../++resource++eea.exhibit.tile.png") no-repeat;
 }
 
 .tab-daviz-map span {
-    background: url("../../++resource++eea.exhibit.map.png") no-repeat;
+  background: url("../../++resource++eea.exhibit.map.png") no-repeat;
 }
 
 .tab-daviz-timeline span {
-    background: url("../../++resource++eea.exhibit.timeline.png") no-repeat;
+  background: url("../../++resource++eea.exhibit.timeline.png") no-repeat;
 }
 
 .exhibit-text-facet {
@@ -53,7 +53,6 @@ div.exhibit-text-facet {
 div.exhibit-text-facet input[type=text] {
   width: 98%;
   font-size: 16px;
-  height: 22px;
   padding: 5px;
   border-color: #B1C748;
   -webkit-box-shadow: 1px 1px 3px #DFDFDF;
@@ -75,4 +74,77 @@ div div.exhibit-facet-body {
 div div.exhibit-facet-header-filterControl {
   width: 4em;
   text-align: right;
+}
+
+/* Table listing */
+.exhibit-viewPanel table.listing td.listingCheckbox,
+.exhibit-viewPanel table.listing th.listingCheckbox {
+  text-align: center;
+}
+
+.exhibit-viewPanel table.listing {
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+.exhibit-viewPanel table.listing .top {
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.exhibit-viewPanel table.listing th {
+  text-align: left;
+  color: #666;
+  border: 0.1em solid #e7e7e7;
+  border-style: solid solid none;
+  background: #ddd;
+}
+
+.exhibit-viewPanel table.listing tr.odd th {
+  border: 0.1em solid #fff;
+  border-style: solid solid none none;
+}
+
+.exhibit-viewPanel table.listing tbody th {
+  font-weight: bold;
+}
+
+.exhibit-viewPanel table.listing tbody tr {
+  text-align:left;
+}
+
+.exhibit-viewPanel table.listing tbody tr.odd {
+  background: #eee;
+}
+
+.exhibit-viewPanel table.listing tbody tr td {
+  background: transparent;
+}
+
+.exhibit-viewPanel table.listing tbody tr.odd td {
+  background: #eee;
+}
+
+.exhibit-viewPanel table.listing td {
+  border-right: 1px solid #ddd;
+}
+
+.exhibit-viewPanel table.listing td {
+  line-height: 2em;
+}
+
+.exhibit-viewPanel table.listing a {
+  border: none;
+  display: inline-block;
+  border-bottom: none !important;
+}
+
+.exhibit-viewPanel table.listing td.draggable {
+  text-shadow: White 1px 1px 1px;
+  background: #ddd !important;
+  border-bottom: 1px solid white;
+  padding: 0.4em 0.4em 0 0.5em;
 }

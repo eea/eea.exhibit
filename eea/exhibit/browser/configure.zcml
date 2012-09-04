@@ -23,4 +23,6 @@
     file="./js/edit.js"
    />
 
+  <include package=".res" />
+
 </configure>

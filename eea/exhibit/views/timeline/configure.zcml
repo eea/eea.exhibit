@@ -17,7 +17,7 @@
     for="eea.app.visualization.interfaces.IVisualizationEnabled"
     name="daviz.timeline.edit"
     class=".edit.Edit"
-    permission="cmf.ModifyPortalContent"
+    permission="eea.app.visualization.configure"
     />
 
   <subscriber

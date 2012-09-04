@@ -17,7 +17,7 @@
     name="daviz.map.edit"
     for="eea.app.visualization.interfaces.IVisualizationEnabled"
     class=".edit.Edit"
-    permission="cmf.ModifyPortalContent"
+    permission="eea.app.visualization.configure"
     />
 
   <subscriber
