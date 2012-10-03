@@ -59,8 +59,9 @@ Dependencies
 Source code
 ===========
 
-Latest source code (Plone 4 compatible):
-   https://svn.eionet.europa.eu/repositories/Zope/trunk/eea.exhibit/trunk
+Latest source code (Zope 2 compatible):
+- `Plone Collective on Github <https://github.com/collective/eea.exhibit>`_
+- `EEA on Github <https://github.com/eea/eea.exhibit>`_
 
 Plone 2 and 3 compatible:
    https://svn.eionet.europa.eu/repositories/Zope/trunk/eea.exhibit/branches/plone25
