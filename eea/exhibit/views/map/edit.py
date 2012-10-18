@@ -1,5 +1,6 @@
 """ Edit map view module
 """
+from zope import schema
 from zope.formlib.form import Fields
 from eea.exhibit.views.map.interfaces import IExhibitMapEdit
 from eea.app.visualization.views.edit import EditForm
