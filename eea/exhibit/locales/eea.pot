@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-10-19 09:42+0000\n"
+"POT-Creation-Date: 2012-10-19 11:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,10 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: eea\n"
+
+#: ../../exhibit/views/tile/interfaces.py:102
+msgid "Abbreviated Count"
+msgstr ""
 
 #: ../../exhibit/views/tabular/interfaces.py:77
 msgid "Border"
@@ -57,13 +61,22 @@ msgstr ""
 msgid "Columns"
 msgstr ""
 
+#: ../../exhibit/views/tile/interfaces.py:37
+msgid "Directions"
+msgstr ""
+
 #: ../../exhibit/views/tabular/interfaces.py:24
 msgid "Display details column"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:26
 #: ../../exhibit/views/tabular/interfaces.py:31
+#: ../../exhibit/views/tile/interfaces.py:19
 msgid "Edit custom exhibit lens. Leave it blank to use the default one. See more details http://www.simile-widgets.org/wiki/Exhibit/Lens_Templates"
+msgstr ""
+
+#: ../../exhibit/views/tile/interfaces.py:78
+msgid "Grouped"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:152
@@ -112,6 +125,7 @@ msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:25
 #: ../../exhibit/views/tabular/interfaces.py:30
+#: ../../exhibit/views/tile/interfaces.py:18
 msgid "Lens template"
 msgstr ""
 
@@ -125,6 +139,10 @@ msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:277
 msgid "Marker scale"
+msgstr ""
+
+#: ../../exhibit/views/tile/interfaces.py:29
+msgid "Orders"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:61
@@ -141,6 +159,14 @@ msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:249
 msgid "Pin width"
+msgstr ""
+
+#: ../../exhibit/views/tile/interfaces.py:57
+msgid "Possible directions"
+msgstr ""
+
+#: ../../exhibit/views/tile/interfaces.py:49
+msgid "Possible orders"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:306
@@ -183,6 +209,14 @@ msgstr ""
 msgid "Shape width"
 msgstr ""
 
+#: ../../exhibit/views/tile/interfaces.py:69
+msgid "Show all"
+msgstr ""
+
+#: ../../exhibit/views/tile/interfaces.py:93
+msgid "Show duplicates"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:299
 msgid "Show footer"
 msgstr ""
@@ -192,10 +226,13 @@ msgid "Show header"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:291
+#: ../../exhibit/views/tile/interfaces.py:86
 msgid "Show summary"
 msgstr ""
 
+#: ../../exhibit/views/map/interfaces.py:318
 #: ../../exhibit/views/tabular/interfaces.py:101
+#: ../../exhibit/views/tile/interfaces.py:109
 msgid "Show toolbox"
 msgstr ""
 
@@ -247,6 +284,14 @@ msgstr ""
 msgid "color of the legend's label"
 msgstr ""
 
+#: ../../exhibit/views/tile/interfaces.py:30
+msgid "comma separated list of one or more expressions, e.g., '.age, .job'"
+msgstr ""
+
+#: ../../exhibit/views/tile/interfaces.py:50
+msgid "comma separated list of other expressions that the user can choose for sorting"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:108
 msgid "default color for map marker"
 msgstr ""
@@ -283,8 +328,28 @@ msgstr ""
 msgid "height of shape of map markers (in pixels)"
 msgstr ""
 
+#: ../../exhibit/views/tile/interfaces.py:87
+msgid "hide or show the # of results"
+msgstr ""
+
+#: ../../exhibit/views/tile/interfaces.py:58
+msgid "how each of the expressions in the 'Possible orders' setting should be sorted when the user picks it"
+msgstr ""
+
+#: ../../exhibit/views/tile/interfaces.py:103
+msgid "how many items to show if 'Show all' is false"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:174
 msgid "how to fit icon images into map markers"
+msgstr ""
+
+#: ../../exhibit/views/tile/interfaces.py:38
+msgid "how to sort each of the expressions in the 'Orders' setting"
+msgstr ""
+
+#: ../../exhibit/views/tile/interfaces.py:94
+msgid "hwhether to ide or show multiple copies of the same item if it fits in multiple positions in the sort/group order"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:167
@@ -375,6 +440,14 @@ msgstr ""
 msgid "whether the map bubble points at the top or at the bottom of map markers"
 msgstr ""
 
+#: ../../exhibit/views/tile/interfaces.py:70
+msgid "whether to show all items (or just the first few); this is forced to true if 'Grouped' is true and the items can be grouped"
+msgstr ""
+
+#: ../../exhibit/views/tile/interfaces.py:79
+msgid "whether to show items in groups if they are 'equal' in the current sorting order"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:62
 msgid "whether to show the map overview control"
 msgstr ""
@@ -383,7 +456,9 @@ msgstr ""
 msgid "whether to show the map scale control"
 msgstr ""
 
+#: ../../exhibit/views/map/interfaces.py:319
 #: ../../exhibit/views/tabular/interfaces.py:102
+#: ../../exhibit/views/tile/interfaces.py:110
 msgid "whether to show the toolbox"
 msgstr ""
 

@@ -40,7 +40,7 @@ class View(ViewForm):
 
         # Add extra stuff
         extra = []
-        for name, _field in schema.getFieldsInOrder(IExhibitMapEdit):
+        for name, field in schema.getFieldsInOrder(IExhibitMapEdit):
             if name == u'lens':
                 continue
             elif name == u'latlng':
@@ -50,8 +50,8 @@ class View(ViewForm):
                 continue
 
             # Extra
-            value = self.data.get(name, None)
-            if not value:
+            value = self.data.get(name, field.default)
+            if value is None:
                 continue
 
             ex_name = name.replace('ex_', 'ex:')

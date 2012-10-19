@@ -313,3 +313,10 @@ class IExhibitMapEdit(Interface):
         required=False,
         default=u""
     )
+
+    ex_showToolbox = schema.Bool(
+        title=_(u"Show toolbox"),
+        description=_(u"whether to show the toolbox"),
+        required=False,
+        default=False
+    )
