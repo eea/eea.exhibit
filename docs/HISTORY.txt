@@ -3,7 +3,6 @@ Changelog
 
 6.1-dev - (unreleased)
 ----------------------
-* WIP: #5521
 * Feature: Allow editing of extra configuration for exhibit views
   [voineali refs #5521]
 
