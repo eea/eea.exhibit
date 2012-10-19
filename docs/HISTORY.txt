@@ -3,6 +3,8 @@ Changelog
 
 6.1-dev - (unreleased)
 ----------------------
+* Feature: Allow editing of extra configuration for exhibit views
+  [voineali refs #5521]
 
 6.0 - (2012-10-08)
 ------------------

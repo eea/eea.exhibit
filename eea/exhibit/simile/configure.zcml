@@ -1,6 +1,6 @@
 <configure
   xmlns:browser="http://namespaces.zope.org/browser"
-  i18n_domain="eea.exhibit">
+  i18n_domain="eea">
 
   <browser:resourceDirectory
     name="eea.simile.ajax"
