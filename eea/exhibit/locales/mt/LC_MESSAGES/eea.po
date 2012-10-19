@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-10-19 11:40+0000\n"
+"POT-Creation-Date: 2012-10-19 13:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,18 @@ msgstr ""
 
 #: ../../exhibit/views/tabular/interfaces.py:77
 msgid "Border"
+msgstr ""
+
+#: ../../exhibit/views/timeline/interfaces.py:128
+msgid "Bottom band height"
+msgstr ""
+
+#: ../../exhibit/views/timeline/interfaces.py:143
+msgid "Bottom band pixels per unit"
+msgstr ""
+
+#: ../../exhibit/views/timeline/interfaces.py:135
+msgid "Bottom band unit"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:80
@@ -43,10 +55,12 @@ msgid "Color"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:122
+#: ../../exhibit/views/timeline/interfaces.py:77
 msgid "Color coder"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:114
+#: ../../exhibit/views/timeline/interfaces.py:69
 msgid "Color key"
 msgstr ""
 
@@ -72,11 +86,16 @@ msgstr ""
 msgid "Edit custom exhibit lens. Leave it blank to use the default one. See more details http://www.simile-widgets.org/wiki/Exhibit/Lens_Templates"
 msgstr ""
 
+#: ../../exhibit/views/timeline/interfaces.py:38
+msgid "End date"
+msgstr ""
+
 #: ../../exhibit/views/tile/interfaces.py:78
 msgid "Grouped"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:152
+#: ../../exhibit/views/timeline/interfaces.py:92
 msgid "Icon coder"
 msgstr ""
 
@@ -85,6 +104,7 @@ msgid "Icon fit"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:144
+#: ../../exhibit/views/timeline/interfaces.py:84
 msgid "Icon key"
 msgstr ""
 
@@ -183,6 +203,7 @@ msgid "Select columns to be shown in table view"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:159
+#: ../../exhibit/views/timeline/interfaces.py:99
 msgid "Select coordinator"
 msgstr ""
 
@@ -215,15 +236,18 @@ msgid "Show duplicates"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:299
+#: ../../exhibit/views/timeline/interfaces.py:166
 msgid "Show footer"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:284
+#: ../../exhibit/views/timeline/interfaces.py:151
 msgid "Show header"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:291
 #: ../../exhibit/views/tile/interfaces.py:86
+#: ../../exhibit/views/timeline/interfaces.py:158
 msgid "Show summary"
 msgstr ""
 
@@ -253,12 +277,44 @@ msgstr ""
 msgid "Sort column"
 msgstr ""
 
+#: ../../exhibit/views/timeline/interfaces.py:33
+msgid "Specify date or starting date"
+msgstr ""
+
+#: ../../exhibit/views/timeline/interfaces.py:39
+msgid "Specify end date if it is the case"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:19
 msgid "Specify which column should be used to get latitude and longitude."
 msgstr ""
 
+#: ../../exhibit/views/timeline/interfaces.py:32
+msgid "Start date"
+msgstr ""
+
 #: ../../exhibit/views/tabular/interfaces.py:69
 msgid "Table styler"
+msgstr ""
+
+#: ../../exhibit/views/timeline/interfaces.py:62
+msgid "Timeline constructor"
+msgstr ""
+
+#: ../../exhibit/views/timeline/interfaces.py:55
+msgid "Timeline height"
+msgstr ""
+
+#: ../../exhibit/views/timeline/interfaces.py:106
+msgid "Top band height"
+msgstr ""
+
+#: ../../exhibit/views/timeline/interfaces.py:121
+msgid "Top band pixels per unit"
+msgstr ""
+
+#: ../../exhibit/views/timeline/interfaces.py:113
+msgid "Top band unit"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:68
@@ -289,6 +345,10 @@ msgstr ""
 msgid "comma separated list of other expressions that the user can choose for sorting"
 msgstr ""
 
+#: ../../exhibit/views/timeline/interfaces.py:63
+msgid "custom constructor for the timeline"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:108
 msgid "default color for map marker"
 msgstr ""
@@ -301,7 +361,12 @@ msgstr ""
 msgid "expression for getting the keys used to add icons the map markers"
 msgstr ""
 
+#: ../../exhibit/views/timeline/interfaces.py:85
+msgid "expression for getting the keys used to add icons to immediate events"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:115
+#: ../../exhibit/views/timeline/interfaces.py:70
 msgid "expression for getting the keys used to color-code the map markers"
 msgstr ""
 
@@ -325,6 +390,10 @@ msgstr ""
 msgid "height of shape of map markers (in pixels)"
 msgstr ""
 
+#: ../../exhibit/views/timeline/interfaces.py:56
+msgid "height of the timeline in pixels"
+msgstr ""
+
 #: ../../exhibit/views/tile/interfaces.py:87
 msgid "hide or show the # of results"
 msgstr ""
@@ -345,6 +414,14 @@ msgstr ""
 msgid "how to sort each of the expressions in the 'Orders' setting"
 msgstr ""
 
+#: ../../exhibit/views/timeline/interfaces.py:144
+msgid "how wide each interval in the bottom band is (in pixels)"
+msgstr ""
+
+#: ../../exhibit/views/timeline/interfaces.py:122
+msgid "how wide each interval in the top band is (in pixels)"
+msgstr ""
+
 #: ../../exhibit/views/tile/interfaces.py:94
 msgid "hwhether to ide or show multiple copies of the same item if it fits in multiple positions in the sort/group order"
 msgstr ""
@@ -354,11 +431,17 @@ msgid "icon size"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:123
+#: ../../exhibit/views/timeline/interfaces.py:78
 msgid "id of a color coder"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:160
+#: ../../exhibit/views/timeline/interfaces.py:100
 msgid "id of a coordinator"
+msgstr ""
+
+#: ../../exhibit/views/timeline/interfaces.py:93
+msgid "id of a icon coder"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:138
@@ -379,6 +462,14 @@ msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:278
 msgid "marker scale"
+msgstr ""
+
+#: ../../exhibit/views/timeline/interfaces.py:129
+msgid "percents that the bottom band takes up"
+msgstr ""
+
+#: ../../exhibit/views/timeline/interfaces.py:107
+msgid "percents that the top band takes up"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:187
@@ -405,6 +496,14 @@ msgstr ""
 msgid "translational adjustment to icon images (in pixels)"
 msgstr ""
 
+#: ../../exhibit/views/timeline/interfaces.py:136
+msgid "unit of the bottom band"
+msgstr ""
+
+#: ../../exhibit/views/timeline/interfaces.py:114
+msgid "unit of the top band"
+msgstr ""
+
 #: ../../exhibit/views/tabular/interfaces.py:78
 msgid "whatever you would normally use to set the border of a <table> element"
 msgstr ""
@@ -422,14 +521,17 @@ msgid "whether map markers have pins"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:300
+#: ../../exhibit/views/timeline/interfaces.py:167
 msgid "whether or not to show the footer of the view"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:285
+#: ../../exhibit/views/timeline/interfaces.py:152
 msgid "whether or not to show the header of the view"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:292
+#: ../../exhibit/views/timeline/interfaces.py:159
 msgid "whether or not to show the summary information of the view"
 msgstr ""
 
