@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-10-18 16:32+0000\n"
+"POT-Creation-Date: 2012-10-19 09:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,8 +14,20 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
+#: ../../exhibit/views/tabular/interfaces.py:77
+msgid "Border"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:80
 msgid "Bubble tip"
+msgstr ""
+
+#: ../../exhibit/views/tabular/interfaces.py:93
+msgid "Cell padding"
+msgstr ""
+
+#: ../../exhibit/views/tabular/interfaces.py:85
+msgid "Cell spacing"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:36
@@ -38,7 +50,16 @@ msgstr ""
 msgid "Color legend label"
 msgstr ""
 
+#: ../../exhibit/views/tabular/interfaces.py:16
+msgid "Columns"
+msgstr ""
+
+#: ../../exhibit/views/tabular/interfaces.py:24
+msgid "Display details column"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:26
+#: ../../exhibit/views/tabular/interfaces.py:31
 msgid "Edit custom exhibit lens. Leave it blank to use the default one. See more details http://www.simile-widgets.org/wiki/Exhibit/Lens_Templates"
 msgstr ""
 
@@ -87,6 +108,7 @@ msgid "Legend label"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:25
+#: ../../exhibit/views/tabular/interfaces.py:30
 msgid "Lens template"
 msgstr ""
 
@@ -122,12 +144,24 @@ msgstr ""
 msgid "Proxy"
 msgstr ""
 
+#: ../../exhibit/views/tabular/interfaces.py:61
+msgid "Row styler"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:55
 msgid "Scale control"
 msgstr ""
 
+#: ../../exhibit/views/tabular/interfaces.py:17
+msgid "Select columns to be shown in table view"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:159
 msgid "Select coordinator"
+msgstr ""
+
+#: ../../exhibit/views/tabular/interfaces.py:25
+msgid "Select this if you want to display a column with a 'more' link to item details"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:207
@@ -158,6 +192,10 @@ msgstr ""
 msgid "Show summary"
 msgstr ""
 
+#: ../../exhibit/views/tabular/interfaces.py:101
+msgid "Show toolbox"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:49
 msgid "Size"
 msgstr ""
@@ -170,8 +208,20 @@ msgstr ""
 msgid "Size key"
 msgstr ""
 
+#: ../../exhibit/views/tabular/interfaces.py:54
+msgid "Sort ascending"
+msgstr ""
+
+#: ../../exhibit/views/tabular/interfaces.py:47
+msgid "Sort column"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:19
 msgid "Specify which column should be used to get latitude and longitude."
+msgstr ""
+
+#: ../../exhibit/views/tabular/interfaces.py:69
+msgid "Table styler"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:68
@@ -212,6 +262,14 @@ msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:130
 msgid "expression for getting the keys used to size-code the map markers"
+msgstr ""
+
+#: ../../exhibit/views/tabular/interfaces.py:70
+msgid "function that takes 2 arguments (table, database) and is called to style the table"
+msgstr ""
+
+#: ../../exhibit/views/tabular/interfaces.py:62
+msgid "function that takes 3 arguments (item, database, tr) and is called to style each row"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:243
@@ -282,6 +340,18 @@ msgstr ""
 msgid "translational adjustment to icon images (in pixels)"
 msgstr ""
 
+#: ../../exhibit/views/tabular/interfaces.py:78
+msgid "whatever you would normally use to set the border of a <table> element"
+msgstr ""
+
+#: ../../exhibit/views/tabular/interfaces.py:94
+msgid "whatever you would normally use to set the cell padding of a <table> element"
+msgstr ""
+
+#: ../../exhibit/views/tabular/interfaces.py:86
+msgid "whatever you would normally use to set the cell spacing of a <table> element"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:236
 msgid "whether map markers have pins"
 msgstr ""
@@ -310,12 +380,24 @@ msgstr ""
 msgid "whether to show the map scale control"
 msgstr ""
 
+#: ../../exhibit/views/tabular/interfaces.py:102
+msgid "whether to show the toolbox"
+msgstr ""
+
+#: ../../exhibit/views/tabular/interfaces.py:55
+msgid "whether to sort ascending or descending"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:250
 msgid "width of pins of map markers (in pixels)"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:215
 msgid "width of shape of map markers (in pixels)"
+msgstr ""
+
+#: ../../exhibit/views/tabular/interfaces.py:48
+msgid "zero-based index of column to sort"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:44

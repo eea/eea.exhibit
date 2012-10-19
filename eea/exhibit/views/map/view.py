@@ -40,7 +40,7 @@ class View(ViewForm):
 
         # Add extra stuff
         extra = []
-        for name, field in schema.getFieldsInOrder(IExhibitMapEdit):
+        for name, _field in schema.getFieldsInOrder(IExhibitMapEdit):
             if name == u'lens':
                 continue
             elif name == u'latlng':
