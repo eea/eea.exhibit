@@ -45,8 +45,8 @@ class View(ViewForm):
         accessor = queryAdapter(self.context, IVisualizationConfig)
         columns = self.data.get('columns', [])
         for column in columns:
-            facet = accessor.facet(column, {})
-            itype = facet.get('item_type', 'text')
+            facet = accessor.json.get('properties', {}).get(column, {})
+            itype = facet.get('valueType', 'text')
             yield itype
 
         if self.details:

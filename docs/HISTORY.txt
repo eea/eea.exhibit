@@ -3,6 +3,8 @@ Changelog
 
 6.1-dev - (unreleased)
 ----------------------
+* Bug fix: Fixed tabular view columns format
+  [voineali refs #9583]
 * Feature: Allow editing of extra configuration for exhibit views
   [voineali refs #5521]
 
