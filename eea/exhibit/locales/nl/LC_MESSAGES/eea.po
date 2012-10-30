@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-10-19 16:15+0000\n"
+"POT-Creation-Date: 2012-10-30 14:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr ""
 msgid "Bottom band unit"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:80
+#: ../../exhibit/views/map/interfaces.py:96
 msgid "Bubble tip"
 msgstr ""
 
@@ -46,25 +46,25 @@ msgstr ""
 msgid "Cell spacing"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:36
+#: ../../exhibit/views/map/interfaces.py:52
 msgid "Center"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:107
+#: ../../exhibit/views/map/interfaces.py:123
 msgid "Color"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:122
+#: ../../exhibit/views/map/interfaces.py:138
 #: ../../exhibit/views/timeline/interfaces.py:77
 msgid "Color coder"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:114
+#: ../../exhibit/views/map/interfaces.py:130
 #: ../../exhibit/views/timeline/interfaces.py:69
 msgid "Color key"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:263
+#: ../../exhibit/views/map/interfaces.py:279
 msgid "Color legend label"
 msgstr ""
 
@@ -80,7 +80,7 @@ msgstr ""
 msgid "Display details column"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:26
+#: ../../exhibit/views/map/interfaces.py:42
 #: ../../exhibit/views/tabular/interfaces.py:31
 #: ../../exhibit/views/tile/interfaces.py:19
 msgid "Edit custom exhibit lens. Leave it blank to use the default one. See more details http://www.simile-widgets.org/wiki/Exhibit/Lens_Templates"
@@ -94,41 +94,41 @@ msgstr ""
 msgid "Grouped"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:152
+#: ../../exhibit/views/map/interfaces.py:168
 #: ../../exhibit/views/timeline/interfaces.py:92
 msgid "Icon coder"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:173
+#: ../../exhibit/views/map/interfaces.py:189
 msgid "Icon fit"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:144
+#: ../../exhibit/views/map/interfaces.py:160
 #: ../../exhibit/views/timeline/interfaces.py:84
 msgid "Icon key"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:270
+#: ../../exhibit/views/map/interfaces.py:286
 msgid "Icon legend label"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:271
+#: ../../exhibit/views/map/interfaces.py:287
 msgid "Icon of the legend's label"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:193
+#: ../../exhibit/views/map/interfaces.py:209
 msgid "Icon offset X"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:200
+#: ../../exhibit/views/map/interfaces.py:216
 msgid "Icon offset Y"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:186
+#: ../../exhibit/views/map/interfaces.py:202
 msgid "Icon scale"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:166
+#: ../../exhibit/views/map/interfaces.py:182
 msgid "Icon size"
 msgstr ""
 
@@ -136,25 +136,33 @@ msgstr ""
 msgid "Latitude and Longitude column"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:256
+#: ../../exhibit/views/map/interfaces.py:27
+msgid "Latitude column"
+msgstr ""
+
+#: ../../exhibit/views/map/interfaces.py:272
 msgid "Legend label"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:25
+#: ../../exhibit/views/map/interfaces.py:41
 #: ../../exhibit/views/tabular/interfaces.py:30
 #: ../../exhibit/views/tile/interfaces.py:18
 msgid "Lens template"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:100
+#: ../../exhibit/views/map/interfaces.py:34
+msgid "Longitude column"
+msgstr ""
+
+#: ../../exhibit/views/map/interfaces.py:116
 msgid "Map constructor"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:93
+#: ../../exhibit/views/map/interfaces.py:109
 msgid "Map height"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:277
+#: ../../exhibit/views/map/interfaces.py:293
 msgid "Marker scale"
 msgstr ""
 
@@ -162,19 +170,19 @@ msgstr ""
 msgid "Orders"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:61
+#: ../../exhibit/views/map/interfaces.py:77
 msgid "Overview control"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:235
+#: ../../exhibit/views/map/interfaces.py:251
 msgid "Pin"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:242
+#: ../../exhibit/views/map/interfaces.py:258
 msgid "Pin height"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:249
+#: ../../exhibit/views/map/interfaces.py:265
 msgid "Pin width"
 msgstr ""
 
@@ -186,7 +194,7 @@ msgstr ""
 msgid "Possible orders"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:306
+#: ../../exhibit/views/map/interfaces.py:322
 msgid "Proxy"
 msgstr ""
 
@@ -194,7 +202,7 @@ msgstr ""
 msgid "Row styler"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:55
+#: ../../exhibit/views/map/interfaces.py:71
 msgid "Scale control"
 msgstr ""
 
@@ -202,7 +210,7 @@ msgstr ""
 msgid "Select columns to be shown in table view"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:159
+#: ../../exhibit/views/map/interfaces.py:175
 #: ../../exhibit/views/timeline/interfaces.py:99
 msgid "Select coordinator"
 msgstr ""
@@ -211,19 +219,19 @@ msgstr ""
 msgid "Select this if you want to display a column with a 'more' link to item details"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:207
+#: ../../exhibit/views/map/interfaces.py:223
 msgid "Shape"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:228
+#: ../../exhibit/views/map/interfaces.py:244
 msgid "Shape alpha"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:221
+#: ../../exhibit/views/map/interfaces.py:237
 msgid "Shape height"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:214
+#: ../../exhibit/views/map/interfaces.py:230
 msgid "Shape width"
 msgstr ""
 
@@ -235,37 +243,37 @@ msgstr ""
 msgid "Show duplicates"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:299
+#: ../../exhibit/views/map/interfaces.py:315
 #: ../../exhibit/views/timeline/interfaces.py:166
 msgid "Show footer"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:284
+#: ../../exhibit/views/map/interfaces.py:300
 #: ../../exhibit/views/timeline/interfaces.py:151
 msgid "Show header"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:291
+#: ../../exhibit/views/map/interfaces.py:307
 #: ../../exhibit/views/tile/interfaces.py:86
 #: ../../exhibit/views/timeline/interfaces.py:158
 msgid "Show summary"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:318
+#: ../../exhibit/views/map/interfaces.py:334
 #: ../../exhibit/views/tabular/interfaces.py:101
 #: ../../exhibit/views/tile/interfaces.py:109
 msgid "Show toolbox"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:49
+#: ../../exhibit/views/map/interfaces.py:65
 msgid "Size"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:137
+#: ../../exhibit/views/map/interfaces.py:153
 msgid "Size coder"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:129
+#: ../../exhibit/views/map/interfaces.py:145
 msgid "Size key"
 msgstr ""
 
@@ -285,8 +293,16 @@ msgstr ""
 msgid "Specify end date if it is the case"
 msgstr ""
 
+#: ../../exhibit/views/map/interfaces.py:28
+msgid "Specify which column should be used to get latitude"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:19
-msgid "Specify which column should be used to get latitude and longitude."
+msgid "Specify which column should be used to get latitude and longitude. If there are separate columns for latitude and longitude, use settings bellow."
+msgstr ""
+
+#: ../../exhibit/views/map/interfaces.py:35
+msgid "Specify which column should be used to get longitude"
 msgstr ""
 
 #: ../../exhibit/views/timeline/interfaces.py:32
@@ -317,23 +333,23 @@ msgstr ""
 msgid "Top band unit"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:68
+#: ../../exhibit/views/map/interfaces.py:84
 msgid "Type"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:43
+#: ../../exhibit/views/map/interfaces.py:59
 msgid "Zoom"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:101
+#: ../../exhibit/views/map/interfaces.py:117
 msgid "a custom map constructor"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:229
+#: ../../exhibit/views/map/interfaces.py:245
 msgid "alpha of shape of map markers"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:264
+#: ../../exhibit/views/map/interfaces.py:280
 msgid "color of the legend's label"
 msgstr ""
 
@@ -349,15 +365,15 @@ msgstr ""
 msgid "custom constructor for the timeline"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:108
+#: ../../exhibit/views/map/interfaces.py:124
 msgid "default color for map marker"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:307
+#: ../../exhibit/views/map/interfaces.py:323
 msgid "expression for getting an item containing a latitude an longitude (specified by ex:lat and ex:long expressions). Needed in the complex case where an item needs to be plotted in multiple locations and you need to be clear which latitude goes with which longitude."
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:145
+#: ../../exhibit/views/map/interfaces.py:161
 msgid "expression for getting the keys used to add icons the map markers"
 msgstr ""
 
@@ -365,12 +381,12 @@ msgstr ""
 msgid "expression for getting the keys used to add icons to immediate events"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:115
+#: ../../exhibit/views/map/interfaces.py:131
 #: ../../exhibit/views/timeline/interfaces.py:70
 msgid "expression for getting the keys used to color-code the map markers"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:130
+#: ../../exhibit/views/map/interfaces.py:146
 msgid "expression for getting the keys used to size-code the map markers"
 msgstr ""
 
@@ -382,11 +398,11 @@ msgstr ""
 msgid "function that takes 3 arguments (item, database, tr) and is called to style each row"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:243
+#: ../../exhibit/views/map/interfaces.py:259
 msgid "height of pins of map markers (in pixels)"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:222
+#: ../../exhibit/views/map/interfaces.py:238
 msgid "height of shape of map markers (in pixels)"
 msgstr ""
 
@@ -406,7 +422,7 @@ msgstr ""
 msgid "how many items to show if 'Show all' is false"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:174
+#: ../../exhibit/views/map/interfaces.py:190
 msgid "how to fit icon images into map markers"
 msgstr ""
 
@@ -426,16 +442,16 @@ msgstr ""
 msgid "hwhether to ide or show multiple copies of the same item if it fits in multiple positions in the sort/group order"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:167
+#: ../../exhibit/views/map/interfaces.py:183
 msgid "icon size"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:123
+#: ../../exhibit/views/map/interfaces.py:139
 #: ../../exhibit/views/timeline/interfaces.py:78
 msgid "id of a color coder"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:160
+#: ../../exhibit/views/map/interfaces.py:176
 #: ../../exhibit/views/timeline/interfaces.py:100
 msgid "id of a coordinator"
 msgstr ""
@@ -444,23 +460,23 @@ msgstr ""
 msgid "id of a icon coder"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:138
+#: ../../exhibit/views/map/interfaces.py:154
 msgid "id of a size coder"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:153
+#: ../../exhibit/views/map/interfaces.py:169
 msgid "id of an icon coder"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:37
+#: ../../exhibit/views/map/interfaces.py:53
 msgid "latitude/longitude where the map centers at the beginning"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:257
+#: ../../exhibit/views/map/interfaces.py:273
 msgid "legend label"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:278
+#: ../../exhibit/views/map/interfaces.py:294
 msgid "marker scale"
 msgstr ""
 
@@ -472,27 +488,27 @@ msgstr ""
 msgid "percents that the top band takes up"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:187
+#: ../../exhibit/views/map/interfaces.py:203
 msgid "scaling adjustment to icon images after fitting them"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:208
+#: ../../exhibit/views/map/interfaces.py:224
 msgid "shape of map markers"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:50
+#: ../../exhibit/views/map/interfaces.py:66
 msgid "size of map controls"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:94
+#: ../../exhibit/views/map/interfaces.py:110
 msgid "the map's height in pixels"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:69
+#: ../../exhibit/views/map/interfaces.py:85
 msgid "the type of map"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:194
+#: ../../exhibit/views/map/interfaces.py:210
 msgid "translational adjustment to icon images (in pixels)"
 msgstr ""
 
@@ -516,26 +532,26 @@ msgstr ""
 msgid "whatever you would normally use to set the cell spacing of a <table> element"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:236
+#: ../../exhibit/views/map/interfaces.py:252
 msgid "whether map markers have pins"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:300
+#: ../../exhibit/views/map/interfaces.py:316
 #: ../../exhibit/views/timeline/interfaces.py:167
 msgid "whether or not to show the footer of the view"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:285
+#: ../../exhibit/views/map/interfaces.py:301
 #: ../../exhibit/views/timeline/interfaces.py:152
 msgid "whether or not to show the header of the view"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:292
+#: ../../exhibit/views/map/interfaces.py:308
 #: ../../exhibit/views/timeline/interfaces.py:159
 msgid "whether or not to show the summary information of the view"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:81
+#: ../../exhibit/views/map/interfaces.py:97
 msgid "whether the map bubble points at the top or at the bottom of map markers"
 msgstr ""
 
@@ -547,15 +563,15 @@ msgstr ""
 msgid "whether to show items in groups if they are 'equal' in the current sorting order"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:62
+#: ../../exhibit/views/map/interfaces.py:78
 msgid "whether to show the map overview control"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:56
+#: ../../exhibit/views/map/interfaces.py:72
 msgid "whether to show the map scale control"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:319
+#: ../../exhibit/views/map/interfaces.py:335
 #: ../../exhibit/views/tabular/interfaces.py:102
 #: ../../exhibit/views/tile/interfaces.py:110
 msgid "whether to show the toolbox"
@@ -565,11 +581,11 @@ msgstr ""
 msgid "whether to sort ascending or descending"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:250
+#: ../../exhibit/views/map/interfaces.py:266
 msgid "width of pins of map markers (in pixels)"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:215
+#: ../../exhibit/views/map/interfaces.py:231
 msgid "width of shape of map markers (in pixels)"
 msgstr ""
 
@@ -577,7 +593,7 @@ msgstr ""
 msgid "zero-based index of column to sort"
 msgstr ""
 
-#: ../../exhibit/views/map/interfaces.py:44
+#: ../../exhibit/views/map/interfaces.py:60
 msgid "zoom level"
 msgstr ""
 
