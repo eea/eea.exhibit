@@ -21,7 +21,25 @@ class View(ViewForm):
     def latlng(self):
         """ Return latitude longitude column
         """
+        if self.data.get('lat', '') and self.data.get('lng', ''):
+            return ''
         return self.data.get('latlng', '')
+
+    @property
+    def lat(self):
+        """ Return latitude column
+        """
+        if self.latlng:
+            return ''
+        return self.data.get('lat', '')
+
+    @property
+    def lng(self):
+        """ Return longitude column
+        """
+        if self.latlng:
+            return ''
+        return self.data.get('lng', '')
 
     @property
     def lens(self):
@@ -43,8 +61,14 @@ class View(ViewForm):
         for name, field in schema.getFieldsInOrder(IExhibitMapEdit):
             if name == u'lens':
                 continue
-            elif name == u'latlng':
+            elif name == u'latlng' and self.latlng:
                 extra.append('ex:latlng=".%s"' % self.latlng)
+                continue
+            elif name == u'lat' and self.lat:
+                extra.append('ex:lat=".%s"' % self.lat)
+                continue
+            elif name == u'lng' and self.lng:
+                extra.append('ex:lng=".%s"' % self.lng)
                 continue
             elif not name.startswith('ex_'):
                 continue
