@@ -1,6 +1,12 @@
-<div class="daviz-tab-view" tal:attributes="id view/tabname">
+<div class="daviz-tab-view daviz-tab-view-noscript" tal:attributes="id view/tabname">
   <div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Live search"></div>
   <div class="daviz-views" ex:role="viewPanel">
     <div tal:replace="structure python:view.render()" />
   </div>
+  <noscript>
+    <tal:tabs repeat="tab view/tabs">
+      <img tal:attributes="alt tab/name;
+        src tab/fallback-image"/>
+    </tal:tabs>
+  </noscript>
 </div>

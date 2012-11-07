@@ -3,6 +3,8 @@ Changelog
 
 6.1-dev - (unreleased)
 ----------------------
+* Feature: Display image when javascript is disabled
+  [szabozo0 refs #9562]
 * Bug fix: Fixed tabular view columns format
   [voineali refs #9583]
 * Feature: Allow distict columns for latitude and longitude
