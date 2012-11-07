@@ -1,6 +1,13 @@
 ===========
 EEA Exhibit
 ===========
+.. image:: http://ci.eionet.europa.eu/job/eea.exhibit-www/badge/icon
+  :target: http://ci.eionet.europa.eu/job/eea.exhibit-www/lastBuild
+.. image:: http://ci.eionet.europa.eu/job/eea.exhibit-plone4/badge/icon
+  :target: http://ci.eionet.europa.eu/job/eea.exhibit-plone4/lastBuild
+.. image:: http://ci.eionet.europa.eu/job/eea.exhibit-zope/badge/icon
+  :target: http://ci.eionet.europa.eu/job/eea.exhibit-zope/lastBuild
+
 EEA Exhibit provides Simile Widgets Exhibit framework integration for
 eea.app.visualization. See eea.daviz package for more details.
 
