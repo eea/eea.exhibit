@@ -1,8 +1,8 @@
 Changelog
 =========
 
-6.1-dev - (unreleased)
-----------------------
+6.1 - (2012-11-09)
+------------------
 * Feature: Display image when javascript is disabled
   [szabozo0 refs #9562]
 * Bug fix: Fixed tabular view columns format
