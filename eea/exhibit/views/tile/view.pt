@@ -1,4 +1,4 @@
-<div class="daviz-tab-view daviz-tab-view-noscript" tal:attributes="id view/tabname">
+<div class="daviz-tab-view daviz-tab-view-noscript" tal:attributes="id view/tabname" i18n:domain="eea">
   <div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Live search"></div>
   <div class="daviz-views" ex:role="viewPanel">
     <div tal:replace="structure python:view.render()" />

@@ -1,7 +1,7 @@
 <tal:view define="
   thumbnail python:view.thumbnail;
   columns python:view.columns"
-  tal:condition="thumbnail">
+  tal:condition="thumbnail" i18n:domain="eea">
 
 <div ex:role="view"
   ex:viewClass="Thumbnail">

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-10-30 14:07+0000\n"
+"POT-Creation-Date: 2012-11-09 12:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -314,6 +314,12 @@ msgstr ""
 
 #: ../../exhibit/views/tabular/interfaces.py:69
 msgid "Table styler"
+msgstr ""
+
+#: ../../exhibit/views/map/view.pt:10
+#: ../../exhibit/views/tabular/view.pt:10
+#: ../../exhibit/views/tile/view.pt:10
+msgid "This is NOT a real chart. To see the real chart, you need Javascript enabled in your browser."
 msgstr ""
 
 #: ../../exhibit/views/timeline/interfaces.py:62
