@@ -45,7 +45,8 @@ class View(ViewForm):
     def lens(self):
         """ View custom lens
         """
-        return self.data.get('lens', '')
+        lens = self.data.get('lens', '')
+        return lens if lens else ''
 
     def render(self, **kwargs):
         """ Render exhibit view
