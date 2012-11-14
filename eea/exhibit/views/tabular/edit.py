@@ -9,3 +9,4 @@ class Edit(EditForm):
     """
     label = u"Tabular view settings"
     form_fields = Fields(IExhibitTabularEdit)
+    previewname = "daviz.tabular.preview.png"

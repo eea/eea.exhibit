@@ -9,3 +9,4 @@ class Edit(EditForm):
     """
     label = u"Tile view settings"
     form_fields = Fields(IExhibitTileEdit)
+    previewname = "daviz.tile.preview.png"

@@ -9,3 +9,4 @@ class Edit(EditForm):
     """
     label = u"Timeline view settings"
     form_fields = Fields(IExhibitTimelineEdit)
+    previewname = "daviz.timeline.preview.png"
