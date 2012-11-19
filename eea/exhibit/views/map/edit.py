@@ -9,3 +9,4 @@ class Edit(EditForm):
     """
     label = u"Map view settings"
     form_fields = Fields(IExhibitMapEdit)
+    previewname = "daviz.map.preview.png"
