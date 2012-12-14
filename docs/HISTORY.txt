@@ -5,6 +5,8 @@ Changelog
 ----------------------
 * Upgrade step: Within "Plone > Site setup > Add-ons" click on
   upgrade button available for eea.exhibit
+* Feature: Possibility to customize Exhibit visualizations title
+  [avoinea]
 * Feature: On saving a chart, copy the generic chart image in the visualization
   [szabozo0 refs #10019]
 

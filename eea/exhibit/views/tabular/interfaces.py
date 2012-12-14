@@ -12,6 +12,13 @@ class IExhibitTabularView(IVisualizationView):
 class IExhibitTabularEdit(Interface):
     """ Exhibit tabular edit
     """
+    title = schema.TextLine(
+        title=_(u"Title"),
+        description=_(u"Friendly name for this visualization"),
+        default=u"Tabular View",
+        required=True,
+    )
+
     columns = schema.List(
         title=_(u"Columns"),
         description=_(u"Select columns to be shown in table view"),

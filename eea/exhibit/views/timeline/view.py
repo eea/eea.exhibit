@@ -9,7 +9,7 @@ from eea.app.visualization.views.view import ViewForm
 class View(ViewForm):
     """ Timeline view
     """
-    label = 'Timeline View'
+    _label = 'Timeline View'
     implements(IExhibitTimelineView)
 
     ex_template = (
@@ -17,6 +17,12 @@ class View(ViewForm):
         '<div ex:role="view" ex:viewClass="Timeline" id="%(id)s" %(extra)s>'
         '</div>'
     )
+
+    @property
+    def label(self):
+        """ View title
+        """
+        return self.data.get('title', '') or self._label
 
     @property
     def start(self):

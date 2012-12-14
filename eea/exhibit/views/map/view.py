@@ -8,7 +8,7 @@ from eea.app.visualization.views.view import ViewForm
 class View(ViewForm):
     """ Thumbnail view
     """
-    label = 'Map View'
+    _label = 'Map View'
     implements(IExhibitMapView)
 
     ex_template = (
@@ -16,6 +16,12 @@ class View(ViewForm):
         '<div ex:role="view" ex:viewClass="Map" id="%(id)s" %(extra)s>'
         '</div>'
     )
+
+    @property
+    def label(self):
+        """ View title
+        """
+        return self.data.get('title', '') or self._label
 
     @property
     def latlng(self):

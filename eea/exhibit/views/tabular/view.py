@@ -11,7 +11,7 @@ from eea.exhibit.views.tabular.interfaces import IExhibitTabularEdit
 class View(ViewForm):
     """ Tabular view
     """
-    label = 'Tabular View'
+    _label = 'Tabular View'
     implements(IExhibitTabularView)
 
     ex_template = (
@@ -20,6 +20,11 @@ class View(ViewForm):
         '</div>'
     )
 
+    @property
+    def label(self):
+        """ View title
+        """
+        return self.data.get('title', '') or self._label
 
     @property
     def details(self):

@@ -9,7 +9,7 @@ from eea.exhibit.views.tile.interfaces import IExhibitTileEdit
 class View(ViewForm):
     """ Tile view
     """
-    label = 'Tile View'
+    _label = 'Tile View'
     implements(IExhibitTileView)
 
     ex_template = (
@@ -17,6 +17,12 @@ class View(ViewForm):
         '<div ex:role="view" id="%(id)s" %(extra)s>'
         '</div>'
     )
+
+    @property
+    def label(self):
+        """ View title
+        """
+        return self.data.get('title', '') or self._label
 
     @property
     def lens(self):

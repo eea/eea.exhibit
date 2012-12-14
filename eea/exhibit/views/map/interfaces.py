@@ -14,6 +14,13 @@ class IExhibitMapView(IVisualizationView):
 class IExhibitMapEdit(Interface):
     """ Exhibit map edit
     """
+    title = schema.TextLine(
+        title=_(u"Title"),
+        description=_(u"Friendly name for this visualization"),
+        default=u"Map View",
+        required=True,
+    )
+
     latlng = schema.Choice(
         title=_(u"Latitude and Longitude column"),
         description=_(u"Specify which column should be used to get latitude "

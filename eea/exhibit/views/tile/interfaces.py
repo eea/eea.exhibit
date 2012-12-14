@@ -14,6 +14,13 @@ class IExhibitTileView(IVisualizationView):
 class IExhibitTileEdit(Interface):
     """ Edit tile view
     """
+    title = schema.TextLine(
+        title=_(u"Title"),
+        description=_(u"Friendly name for this visualization"),
+        default=u"Tile View",
+        required=True,
+    )
+
     lens = schema.Text(
         title=_(u"Lens template"),
         description=_(u""

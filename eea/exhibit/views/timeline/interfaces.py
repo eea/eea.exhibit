@@ -28,6 +28,13 @@ class IExhibitTimelineView(IVisualizationView):
 class IExhibitTimelineEdit(Interface):
     """ Exhibit timeline edit
     """
+    title = schema.TextLine(
+        title=_(u"Title"),
+        description=_(u"Friendly name for this visualization"),
+        default=u"Timeline View",
+        required=True,
+    )
+
     start = schema.Choice(
         title=_(u'Start date'),
         description=_(u"Specify date or starting date"),
