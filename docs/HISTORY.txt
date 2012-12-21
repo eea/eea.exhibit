@@ -5,6 +5,9 @@ Changelog
 ----------------------
 * Upgrade step: Within "Plone > Site setup > Add-ons" click on
   upgrade button available for eea.exhibit
+* Change: Fix tabular view to get column labels from FacetsVocabulary and not
+  directly from annotations
+  [voineali refs #9558]
 * Feature: Possibility to customize Exhibit visualizations title
   [avoinea]
 * Feature: On saving a chart, copy the generic chart image in the visualization

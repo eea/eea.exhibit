@@ -2,7 +2,8 @@
 """
 from zope import schema
 from zope.interface import implements
-from zope.component import queryAdapter
+from zope.component import queryAdapter, queryUtility
+from zope.schema.interfaces import IVocabularyFactory
 from eea.app.visualization.interfaces import IVisualizationConfig
 from eea.app.visualization.views.view import ViewForm
 from eea.exhibit.views.tabular.interfaces import IExhibitTabularView
@@ -61,12 +62,12 @@ class View(ViewForm):
     def labels(self):
         """ Returns labels property for tabular view
         """
-        accessor = queryAdapter(self.context, IVisualizationConfig)
-        columns = self.data.get('columns', [])
+        voc = queryUtility(IVocabularyFactory,
+                             name="eea.daviz.vocabularies.FacetsVocabulary")
+        facets = dict((term.value, term.title) for term in voc(self.context))
 
-        for column in columns:
-            facet = accessor.facet(column, {})
-            label = facet.get('label', column)
+        for column in self.data.get('columns', []):
+            label = facets.get(column, column)
             yield label
 
         if self.details:
