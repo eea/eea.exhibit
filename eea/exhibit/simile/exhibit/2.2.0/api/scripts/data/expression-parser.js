@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*==================================================
  *  Exhibit.ExpressionParser
  *  http://simile.mit.edu/wiki/Exhibit/API/ExpressionParser

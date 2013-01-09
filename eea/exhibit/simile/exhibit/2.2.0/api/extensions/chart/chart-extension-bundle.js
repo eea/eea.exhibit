@@ -1,3 +1,4 @@
+/* jslint:disable */
 ﻿
 
 /* bar-chart-view.js */

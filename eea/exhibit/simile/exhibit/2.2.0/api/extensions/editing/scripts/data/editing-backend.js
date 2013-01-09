@@ -1,3 +1,4 @@
+/* jslint:disable */
 Exhibit.EditingBackend = function() {
     this._nodeTree = {};
     this._dataTree = {};

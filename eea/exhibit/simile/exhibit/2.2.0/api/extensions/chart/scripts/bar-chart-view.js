@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**==================================================
  *  Exhibit.BarChartView
  *  Creates a bar graph with the items going down the y-axis

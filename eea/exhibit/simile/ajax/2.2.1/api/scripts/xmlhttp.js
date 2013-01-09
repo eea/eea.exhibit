@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview XmlHttp utility functions
  * @name SimileAjax.XmlHttp

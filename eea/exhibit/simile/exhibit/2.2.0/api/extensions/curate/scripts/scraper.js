@@ -1,3 +1,4 @@
+/* jslint:disable */
 Exhibit.Scraper = function(elmt, uiContext, settings) {    
     if (!settings.scraperInput) {
         SimileAjax.Debug.warn('Scraper not given an input element!');

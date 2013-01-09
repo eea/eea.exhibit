@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*==================================================
  *  Exhibit.Functions
  *  http://simile.mit.edu/wiki/Exhibit/API/Functions

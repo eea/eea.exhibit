@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*==================================================
  *  Exhibit.CollectionSummaryWidget German localization
  *==================================================

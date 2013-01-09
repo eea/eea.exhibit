@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Graphics utility functions and constants
  * @name SimileAjax.Graphics

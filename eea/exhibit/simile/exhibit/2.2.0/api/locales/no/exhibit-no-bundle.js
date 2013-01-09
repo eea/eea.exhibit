@@ -1,3 +1,4 @@
+/* jslint:disable */
 
 
 /* database-l10n.js */

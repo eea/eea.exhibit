@@ -1,3 +1,4 @@
+/* jslint:disable */
 //=============================================================================
 // ChangeListView
 // Tracks changes made to Exhibit items through item changing interfaces, and

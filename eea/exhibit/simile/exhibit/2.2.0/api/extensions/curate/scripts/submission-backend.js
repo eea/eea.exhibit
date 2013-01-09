@@ -1,3 +1,4 @@
+/* jslint:disable */
 Exhibit.SubmissionBackend = {};
 
 Exhibit.SubmissionBackend.formatChanges = function(itemChanges, submissionProperties) {

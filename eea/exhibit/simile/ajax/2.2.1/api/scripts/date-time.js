@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview A collection of date/time utility functions
  * @name SimileAjax.DateTime

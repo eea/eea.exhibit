@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*==================================================
  *  Exhibit Timeplot Extension English localization
  *==================================================

@@ -1,3 +1,4 @@
+/* jslint:disable */
 
 if (!("console" in window) || !("firebug" in console)) {
 (function()

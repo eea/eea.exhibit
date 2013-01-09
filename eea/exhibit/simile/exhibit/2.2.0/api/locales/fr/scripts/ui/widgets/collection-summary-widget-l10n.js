@@ -1,3 +1,4 @@
+/* jslint:disable */
 ﻿/*==================================================
  *  Exhibit.CollectionSummaryWidget French localization
  *==================================================

@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview UI layers and window-wide dragging
  * @name SimileAjax.WindowManager

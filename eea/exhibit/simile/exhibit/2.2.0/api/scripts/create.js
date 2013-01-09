@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*======================================================================
  *  Exhibit auto-create
  *  Code to automatically create the database, load the data links in

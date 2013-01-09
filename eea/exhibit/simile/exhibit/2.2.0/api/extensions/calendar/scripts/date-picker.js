@@ -1,3 +1,4 @@
+/* jslint:disable */
 Exhibit.DatePickerFacet.DatePicker = function(div, facet, date) {
     this._div = div;
     this._facet = facet;

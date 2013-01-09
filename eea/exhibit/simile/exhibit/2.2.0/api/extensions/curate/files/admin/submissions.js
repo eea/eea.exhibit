@@ -1,3 +1,4 @@
+/* jslint:disable */
 [
     {
         "sub_id": "102c7417fe54459081a7d1957c2ff126", 

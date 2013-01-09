@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*==================================================
  *  This file is used to detect that all outstanding
  *  javascript files have been loaded. You can put

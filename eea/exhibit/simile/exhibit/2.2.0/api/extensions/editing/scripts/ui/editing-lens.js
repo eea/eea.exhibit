@@ -1,3 +1,4 @@
+/* jslint:disable */
 Exhibit.EditingLens = {};
 
 var NO_EDITING = 0;

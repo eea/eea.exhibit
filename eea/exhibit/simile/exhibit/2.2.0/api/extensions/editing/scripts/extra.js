@@ -1,3 +1,4 @@
+/* jslint:disable */
 
 /**
  * Makes the span for a single value that can be edited.

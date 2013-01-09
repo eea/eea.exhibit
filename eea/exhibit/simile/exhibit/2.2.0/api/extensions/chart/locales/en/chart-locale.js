@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*==================================================
  *  Exhibit Chart Extension English localization
  *==================================================

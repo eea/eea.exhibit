@@ -1,3 +1,4 @@
+/* jslint:disable */
 // provide SimileAjax's JSON library to Metaweb
 var JSON = SimileAjax.JSON;
 JSON.serialize = JSON.toJSONString;

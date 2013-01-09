@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*==================================================
  *  Exhibit.FormatParser
  *  http://simile.mit.edu/wiki/Exhibit/API/FormatParser

@@ -1,3 +1,4 @@
+/* jslint:disable */
 ﻿
 
 /* timeline-view.js */

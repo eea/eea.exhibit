@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * A basic set (in the mathematical sense) data structure
  *

@@ -1,3 +1,4 @@
+/* jslint:disable */
  
 Exhibit.SliderFacet.slider = function(div, facet, precision) {
     this._div = div;

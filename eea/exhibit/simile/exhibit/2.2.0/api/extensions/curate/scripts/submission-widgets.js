@@ -1,3 +1,4 @@
+/* jslint:disable */
 Exhibit.Submission = {};
 
 Exhibit.Submission.submissionWidgets = ['submission-property', 'submission-button'];

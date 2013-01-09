@@ -1,3 +1,4 @@
+/* jslint:disable */
 Exhibit.ItemCreator = function(elmt, uiContext, settings) {
     var db = uiContext.getDatabase();
 

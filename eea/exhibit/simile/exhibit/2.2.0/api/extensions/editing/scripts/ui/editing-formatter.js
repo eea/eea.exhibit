@@ -1,3 +1,4 @@
+/* jslint:disable */
 Exhibit.Formatter._ListFormatter.prototype.formatList = function(values, count, valueType, appender, editing) {
     var uiContext = this._uiContext;
     var self = this;

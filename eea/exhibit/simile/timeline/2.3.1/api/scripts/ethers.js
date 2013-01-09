@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*==================================================
  *  An "ether" is a object that maps date/time to pixel coordinates.
  *==================================================

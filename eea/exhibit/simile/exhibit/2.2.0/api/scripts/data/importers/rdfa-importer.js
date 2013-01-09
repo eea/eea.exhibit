@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*==================================================
  *  Exhibit.RDFaImporter
  *  author: Keith Alexander (with the assistance of Johan Sundström and Ben Adida)

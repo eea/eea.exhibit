@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*======================================================================
  *  Exhibit.Database
  *  http://simile.mit.edu/wiki/Exhibit/API/Database

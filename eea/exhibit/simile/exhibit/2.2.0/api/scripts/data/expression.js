@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*==================================================
  *  Exhibit.Expression
  *  http://simile.mit.edu/wiki/Exhibit/API/Expression

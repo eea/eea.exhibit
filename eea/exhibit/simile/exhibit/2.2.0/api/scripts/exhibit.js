@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*======================================================================
  *  Exhibit
  *  http://simile.mit.edu/wiki/Exhibit/API/Exhibit

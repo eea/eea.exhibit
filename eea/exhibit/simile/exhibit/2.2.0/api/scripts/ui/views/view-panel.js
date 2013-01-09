@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*======================================================================
  *  Exhibit.ViewPanel
  *  http://simile.mit.edu/wiki/Exhibit/API/ViewPanel

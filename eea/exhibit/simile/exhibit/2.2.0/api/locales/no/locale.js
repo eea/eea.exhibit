@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*==================================================
  *  Norwegian (bokmål) localization 
  *  

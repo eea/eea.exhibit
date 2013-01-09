@@ -1,3 +1,4 @@
+/* jslint:disable */
 
 Exhibit.LensRegistry.prototype.createLens = function(itemID, div, uiContext, editing) {
     var lensTemplate = this.getLens(itemID, uiContext);

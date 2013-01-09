@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*==================================================
  *  Exhibit.OrderedViewFrame Norwegian localization
  *==================================================

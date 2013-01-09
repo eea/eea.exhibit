@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*
  *  Copied directly from http://www.json.org/json.js.
  */

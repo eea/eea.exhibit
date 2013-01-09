@@ -1,3 +1,4 @@
+/* jslint:disable */
 
 /* database-l10n.js */
 if(!("l10n" in Exhibit.Database)){Exhibit.Database.l10n={};

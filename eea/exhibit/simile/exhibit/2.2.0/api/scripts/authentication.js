@@ -1,3 +1,4 @@
+/* jslint:disable */
 Exhibit.Authentication = {};
 
 // global flag for whether exhibit is authenticated
