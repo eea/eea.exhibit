@@ -1,6 +1,6 @@
-<tal:ns xmlns:ex="http://simile.mit.edu/2006/11/exhibit#">
-
-<div class="daviz-tab-view daviz-tab-view-noscript" tal:attributes="id view/tabname" i18n:domain="eea">
+<div
+  xmlns:ex="http://simile.mit.edu/2006/11/exhibit#"
+  class="daviz-tab-view daviz-tab-view-noscript" tal:attributes="id view/tabname" i18n:domain="eea">
   <div ex:role="facet" ex:facetClass="TextSearch" ex:facetLabel="Live search"></div>
   <div class="daviz-views" ex:role="viewPanel">
     <div tal:replace="structure python:view.render()" />
@@ -16,5 +16,3 @@
     </tal:tabs>
   </noscript>
 </div>
-
-</tal:ns>
