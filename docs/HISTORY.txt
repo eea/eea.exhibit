@@ -1,6 +1,9 @@
 Changelog
 =========
 
+6.3-dev - (unreleased)
+----------------------
+
 6.2 - (2013-01-10)
 ------------------
 * Upgrade step: Within "Plone > Site setup > Add-ons" click on
