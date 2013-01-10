@@ -1,8 +1,8 @@
 Changelog
 =========
 
-6.2-dev - (unreleased)
-----------------------
+6.2 - (2013-01-10)
+------------------
 * Upgrade step: Within "Plone > Site setup > Add-ons" click on
   upgrade button available for eea.exhibit
 * Change: Fix tabular view to get column labels from FacetsVocabulary and not
@@ -12,7 +12,8 @@ Changelog
   [avoinea]
 * Feature: On saving a chart, copy the generic chart image in the visualization
   [szabozo0 refs #10019]
-* Bug fix: add namespace declaration for exhibit (makes Chameleon happy) [simahawk]
+* Bug fix: add namespace declaration for exhibit (makes Chameleon happy)
+  [simahawk]
 
 6.1 - (2012-11-09)
 ------------------
