@@ -12,6 +12,7 @@ Changelog
   [avoinea]
 * Feature: On saving a chart, copy the generic chart image in the visualization
   [szabozo0 refs #10019]
+* Bug fix: add namespace declaration for exhibit (makes Chameleon happy) [simahawk]
 
 6.1 - (2012-11-09)
 ------------------
