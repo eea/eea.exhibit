@@ -9,7 +9,7 @@
 
   <browser:resourceDirectory
     name="eea.simile.exhibit"
-    directory="exhibit/2.2.0/api"
+    directory="exhibit/3.0.0/api"
   />
 
   <browser:resourceDirectory
