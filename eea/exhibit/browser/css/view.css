@@ -148,3 +148,7 @@ div div.exhibit-facet-header-filterControl {
   border-bottom: 1px solid white;
   padding: 0.4em 0.4em 0 0.5em;
 }
+
+#daviz-view .exhibit-bookmarkWidget-popup {
+  display: none;
+}
