@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Code values along a size gradient.
  * @author David Huynh

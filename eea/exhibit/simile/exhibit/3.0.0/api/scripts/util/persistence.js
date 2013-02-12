@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Support methods surrounding generating a URL for an item
  *               in the database.

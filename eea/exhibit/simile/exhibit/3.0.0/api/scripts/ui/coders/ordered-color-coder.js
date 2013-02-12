@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview  Reads the color coder entries as if they were
  *  in order.  Eliminates the mixed case and uses

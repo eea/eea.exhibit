@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
 sprintf() for JavaScript 0.7-beta1
 http://www.diveintojavascript.com/projects/javascript-sprintf

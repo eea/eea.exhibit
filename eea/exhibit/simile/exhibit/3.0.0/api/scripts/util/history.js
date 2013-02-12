@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * This requires the entire Exhibit infrastructure to be oriented around
  * generating registered state changes.

@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview General backwards compatibility material.
  * @author <a href="mailto:ryanlee@zepheira.com">Ryan Lee</a>

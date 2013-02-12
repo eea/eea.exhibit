@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Gap fillers in browser implementations.  Only defined if
  *    native implementation is not detected.

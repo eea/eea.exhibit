@@ -14,7 +14,7 @@ class View(ViewForm):
 
     ex_template = (
         '%(lens)s'
-        '<div ex:role="view" id="%(id)s" %(extra)s>'
+        '<div ex:role="exhibit-view" id="%(id)s" %(extra)s>'
         '</div>'
     )
 

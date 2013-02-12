@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview List facet functions and UI
  * @author David Huynh

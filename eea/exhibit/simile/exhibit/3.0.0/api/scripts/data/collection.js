@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Represents subsets of a database.
  * @author David Huynh

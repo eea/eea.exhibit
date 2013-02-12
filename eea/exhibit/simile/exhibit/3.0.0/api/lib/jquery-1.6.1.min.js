@@ -1,3 +1,4 @@
+/* jslint:disable */
 /*!
  * jQuery JavaScript Library v1.6.1
  * http://jquery.com/

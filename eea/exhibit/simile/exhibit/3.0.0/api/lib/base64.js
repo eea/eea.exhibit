@@ -1,3 +1,4 @@
+/* jslint:disable */
 // From https://ecmanaut.googlecode.com/svn/trunk/lib/base64.js
 // Based on public domain code by Tyler Akins <http://rumkin.com/>
 // Original code at http://rumkin.com/tools/compression/base64.php

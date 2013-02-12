@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Methods for generating and interpreting session state
  *               bookmarks.

@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Instance of Exhibit.Exporter for tab-separated values.
  * @author David Huynh

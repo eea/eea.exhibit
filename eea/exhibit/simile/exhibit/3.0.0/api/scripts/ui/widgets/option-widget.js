@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview View header option making widget
  * @author David Huynh

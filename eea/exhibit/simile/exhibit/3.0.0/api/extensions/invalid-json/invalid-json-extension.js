@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Methods for converting Exhibit 2.2.0 JSON into
  *     valid JSON 2.0.  If the existing Exhibit JSON import fails

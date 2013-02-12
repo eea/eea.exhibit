@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Widget for acquiring permalink to state of Exhibit.
  * @author <a href="mailto:ryanlee@zepheira.com">Ryan Lee</a>

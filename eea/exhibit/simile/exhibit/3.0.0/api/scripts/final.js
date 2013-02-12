@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Load locales, any dynamic post-script loading activities.
  */

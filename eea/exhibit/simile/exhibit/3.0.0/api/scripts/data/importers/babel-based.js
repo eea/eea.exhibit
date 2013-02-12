@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Babel service-based data conversion and import.
  * @author David Huynh

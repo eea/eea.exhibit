@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Query language class representing graph paths.
  * @author David Huynh

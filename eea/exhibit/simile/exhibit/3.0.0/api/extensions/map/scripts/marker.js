@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Utility functions for generating a marker suitable for
  *   external libraries to use in making a marker.

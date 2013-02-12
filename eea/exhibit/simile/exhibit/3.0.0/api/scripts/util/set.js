@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @author David Huynh
  * @author <a href="mailto:ryanlee@zepheira.com">Ryan Lee</a>

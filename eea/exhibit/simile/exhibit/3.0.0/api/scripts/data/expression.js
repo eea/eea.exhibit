@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Base class for database query language.
  * @author David Huynh

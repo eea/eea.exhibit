@@ -21,7 +21,8 @@ jQuery(document).ready(function(){
     // Refresh map
     if(css.indexOf('daviz-map') !== -1){
       try{
-        exhibit.getComponent('daviz-map')._map.checkResize();
+        var _map = exhibit.getComponent('daviz-map')._map;
+        google.maps.event.trigger(_map, 'resize');
       }catch(mapError){
         if(window.console !== undefined){
           console.log(mapError);

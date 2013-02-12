@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview General class for data exporter.
  * @author <a href="mailto:ryanlee@zepheira.com">Ryan Lee</a>

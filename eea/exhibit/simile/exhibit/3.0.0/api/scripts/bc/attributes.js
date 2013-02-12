@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Methods for handling older Exhibit attribute styles. Only
  *     load if the page-based config seems to contain a namespace / attributes

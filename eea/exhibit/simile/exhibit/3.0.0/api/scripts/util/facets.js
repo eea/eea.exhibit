@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Facet building and interaction utilities.
  * @author David Huynh

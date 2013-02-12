@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Thumbnail view functions and UI.
  * @author David Huynh

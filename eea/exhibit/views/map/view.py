@@ -13,7 +13,8 @@ class View(ViewForm):
 
     ex_template = (
         '%(lens)s'
-        '<div ex:role="view" ex:viewClass="Map" id="%(id)s" %(extra)s>'
+        '<div ex:role="exhibit-view" ex:viewClass="Exhibit.Map" '
+          'id="%(id)s" %(extra)s>'
         '</div>'
     )
 

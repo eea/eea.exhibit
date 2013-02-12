@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Error reporting.  This file is not localized in order to
  *      keep errors in that system from interfering with this one.

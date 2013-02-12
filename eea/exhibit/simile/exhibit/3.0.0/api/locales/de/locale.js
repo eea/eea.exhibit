@@ -1,3 +1,4 @@
+/* jslint:disable */
 Exhibit.Localization.importLocale("de", {
     "%general.missingLabel": "fehlend",
     "%general.missingSortKey": "(fehlend)",

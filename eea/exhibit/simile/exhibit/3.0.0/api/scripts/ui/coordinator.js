@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Helps bind and trigger events between views.
  * @author David Huynh

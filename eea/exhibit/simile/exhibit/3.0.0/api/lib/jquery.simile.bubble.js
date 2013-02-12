@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview jQuery 1.6+ plugin for making popup bubbles.
  * @author David Huynh

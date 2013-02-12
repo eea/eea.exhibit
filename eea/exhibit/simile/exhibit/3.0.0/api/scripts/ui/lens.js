@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Lens class
  * @author David Huynh

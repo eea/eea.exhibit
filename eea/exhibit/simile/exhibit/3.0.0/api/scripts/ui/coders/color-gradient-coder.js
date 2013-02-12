@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Code values along a color gradient.
  * @author David Huynh

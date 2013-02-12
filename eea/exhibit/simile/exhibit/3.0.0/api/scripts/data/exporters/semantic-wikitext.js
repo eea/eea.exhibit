@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Instance of Exhibit.Exporter for Semantic MediaWiki text.
  * @author David Huynh

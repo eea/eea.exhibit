@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Database item type definition.
  * @author David Huynh

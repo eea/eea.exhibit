@@ -1,3 +1,4 @@
+/* jslint:disable */
 Exhibit.Localization.importLocale("sv", {
     "%general.missingLabel": "saknas",
     "%general.missingSortKey": "(saknas)",

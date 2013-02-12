@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Development widget to assist with resetting history, which
  *     can get in an odd state if the Exhibit is being designed.

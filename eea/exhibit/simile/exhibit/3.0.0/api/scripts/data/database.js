@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Database interface and local implementation, with helper
  *               classes.

@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Lens registry for tracking lenses in a context.
  * @author David Huynh

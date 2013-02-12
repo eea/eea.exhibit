@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Format parsing
  * @author David Huynh

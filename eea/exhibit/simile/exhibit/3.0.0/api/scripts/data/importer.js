@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview General class for data importer.
  * @author <a href="mailto:ryanlee@zepheira.com">Ryan Lee</a>

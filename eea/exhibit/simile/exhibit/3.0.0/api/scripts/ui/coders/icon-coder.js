@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Code values with icons.
  * @author David Huynh

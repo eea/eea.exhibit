@@ -14,7 +14,8 @@ class View(ViewForm):
 
     ex_template = (
         '%(lens)s'
-        '<div ex:role="view" ex:viewClass="Timeline" id="%(id)s" %(extra)s>'
+        '<div ex:role="exhibit-view" ex:viewClass="Timeline" '
+          'id="%(id)s" %(extra)s>'
         '</div>'
     )
 

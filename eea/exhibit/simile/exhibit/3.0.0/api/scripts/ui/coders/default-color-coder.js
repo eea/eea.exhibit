@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Color coder to use when none is provided but one is needed.
  *     Does NOT extend Exhibit.Coder as it cannot be configured and has no

@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Code values with size.
  * @author David Huynh

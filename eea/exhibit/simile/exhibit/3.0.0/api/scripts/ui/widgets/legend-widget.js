@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Provide an easy way to attach classifications to a
  *     view with a legend widget.

@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Instance of Exhibit.Exporter for BibTex.
  * @author David Huynh

@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Legend gradient widget.
  * @author Nina Guo

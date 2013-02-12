@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview View panel functions and UI.
  * @author David Huynh

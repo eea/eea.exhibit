@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Text search facet functions and UI
  * @author David Huynh

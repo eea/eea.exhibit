@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Handle generic JSONP importing.
  * @author David Huynh

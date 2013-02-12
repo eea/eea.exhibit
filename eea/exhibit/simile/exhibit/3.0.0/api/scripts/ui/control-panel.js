@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Provides a holding place for Exhibit-wide controls.
  * @author <a href="mailto:ryanlee@zepheira.com">Ryan Lee</a>

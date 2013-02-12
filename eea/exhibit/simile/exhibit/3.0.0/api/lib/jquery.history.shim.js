@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Modify History.js to take over all anchor management.
  * @author <a href="mailto:ryanlee@zepheira.com">Ryan Lee</a>

@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Resizable element widget
  * @author David Huynh

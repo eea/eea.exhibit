@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Tabular view methods and UI.
  * @author David Huynh

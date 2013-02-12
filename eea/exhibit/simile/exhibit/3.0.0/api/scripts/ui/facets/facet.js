@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Basic facet component registration.
  * @author <a href="mailto:ryanlee@zepheira.com">Ryan Lee</a>

@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Implementation of query language function features.
  * @author David Huynh

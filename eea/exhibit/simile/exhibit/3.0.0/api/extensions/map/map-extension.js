@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview An extension to Exhibit adding a map view with options for
  *    different mapping services.

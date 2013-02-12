@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview An extension to Exhibit adding a view using SIMILE Timeline.
  * @author David Huynh

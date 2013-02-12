@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Utilities for various parts of Exhibit to collect
  *    their settings.

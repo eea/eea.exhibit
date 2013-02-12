@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Toolbox widget, the scissors, for exporting data.
  * @author David Huynh

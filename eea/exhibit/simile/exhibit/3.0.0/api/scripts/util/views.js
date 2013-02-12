@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview View helper functions and utilities.
  * @author David Huynh

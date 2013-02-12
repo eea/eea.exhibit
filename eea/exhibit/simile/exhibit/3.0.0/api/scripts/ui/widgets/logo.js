@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview 
  * @author David Huynh

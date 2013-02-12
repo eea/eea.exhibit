@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * Local in-memory implementation of the Exhibit Database.  Other
  * implementations should fully implement the interface described by

@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview These things are all normally defined in simile-ajax-api.js
  *      and scripts/platform.js in the SimileAjax file hierarchy.  Because

@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview View component.
  * @author <a href="mailto:ryanlee@zepheira.com">Ryan Lee</a>

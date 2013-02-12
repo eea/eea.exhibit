@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Localization handlers
  * @author <a href="mailto:ryanlee@zepheira.com">Ryan Lee</a>

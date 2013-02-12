@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Numeric range facet functions and UI
  * @author David Huynh

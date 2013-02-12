@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview All classes and support methods for parsing queries.
  * @author David Huynh

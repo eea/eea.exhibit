@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Instance of Exhibit.Exporter for Exhibit JSON.
  * @author David Huynh

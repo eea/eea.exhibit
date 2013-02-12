@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Database property definition.
  * @author David Huynh

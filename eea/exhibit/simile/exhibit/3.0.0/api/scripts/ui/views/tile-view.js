@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Tile view functions and UI.
  * @author David Huynh

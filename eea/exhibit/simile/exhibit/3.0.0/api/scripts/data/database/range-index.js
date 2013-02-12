@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Class for indexing sortable property value ranges.
  * @author David Huynh

@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview jQuery 1.6+ plugin for DOM templating and pre-rendering.
  * @author David Huynh

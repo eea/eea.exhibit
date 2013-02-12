@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Default colors for color coders.
  * @author David Huynh

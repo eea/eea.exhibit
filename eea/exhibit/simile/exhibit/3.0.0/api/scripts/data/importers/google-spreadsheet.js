@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Read Google Docs Spreadsheet JSONP feed.
  * @author David Huynh

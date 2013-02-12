@@ -1,3 +1,4 @@
+/* jslint:disable */
 /**
  * @fileOverview Centralized component registry for easier API access.
  * @author <a href="mailto:ryanlee@zepheira.com">Ryan Lee</a>
