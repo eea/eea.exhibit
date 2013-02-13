@@ -10,7 +10,10 @@ jQuery(document).ready(function(){
     // Refresh timeline
     if(css.indexOf('timeline') !== -1){
       try{
-        Timeline.getTimelineFromID(0).layout();
+        var timeline = Timeline.getTimelineFromID(0);
+        var now = new Date();
+        timeline.layout();
+        timeline.getBand(0).scrollToCenter(now);
       }catch(timeError){
         if(window.console !== undefined){
           console.log(timeError);

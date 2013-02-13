@@ -574,6 +574,9 @@ Exhibit.TimelineView.prototype._reconstruct = function() {
             band.scrollToCenter(earliest);
         } else if (typeof latest !== "undefined" && latest !== null && centerDate > latest) {
             band.scrollToCenter(latest);
+        } else {
+            var now = new Date();
+            band.scrollToCenter(now);
         }
     }
     this._dom.setUnplottableMessage(currentSize, unplottableItems);
