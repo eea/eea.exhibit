@@ -1,8 +1,11 @@
 Changelog
 =========
 
-6.3-dev - (unreleased)
+7.0-dev - (unreleased)
 ----------------------
+* Feature: Upgraded to Simile Exhibit 3.0
+  [voineali refs #13807]
+
 
 6.2 - (2013-01-10)
 ------------------

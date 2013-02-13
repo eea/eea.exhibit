@@ -116,7 +116,7 @@ class IExhibitMapEdit(Interface):
         title=_(u"Map height"),
         description=_(u"the map's height in pixels"),
         required=False,
-        default=400,
+        default=450,
     )
 
     ex_mapConstructor = schema.TextLine(
