@@ -97,7 +97,7 @@
             scriptURLs.push(Exhibit.TimeExtension.urlPrefix + "load-simile-ajax.js");
         }
         if (typeof Timeline === "undefined") {
-            scriptURLs.push(Exhibit.TimeExtension.params.timelinePrefix + "/timeline/" + Exhibit.TimeExtension.params.timelineVersion + "/timeline-api.js?bundle=true");
+            scriptURLs.push('++resource++eea.simile.timeline/timeline-api.js?bundle=true')
         }
 
         if (Exhibit.TimeExtension.params.bundle) {
@@ -121,7 +121,7 @@
             if (typeof Timeline !== "undefined") {
                 Exhibit.jQuery(document).trigger("delayFinished.exhibit", delayID);
             } else {
-                setTimeout(finishedLoading, 2000);
+                setTimeout(finishedLoading, 500);
             }
         };
         finishedLoading();

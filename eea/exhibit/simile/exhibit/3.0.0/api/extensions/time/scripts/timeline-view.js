@@ -273,9 +273,7 @@ Exhibit.TimelineView.prototype._initializeUI = function() {
         legendWidgetSettings
     );
 
-    if(Timeline.DefaultEventSource){
-        this._eventSource = new Timeline.DefaultEventSource();
-    }
+    this._eventSource = new Timeline.DefaultEventSource();
     self._initializeViewUI();
 
     this._reconstruct();

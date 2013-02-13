@@ -16,7 +16,8 @@ if (typeof SimileAjax === "undefined") {
 
     SimileAjax = {
         loaded:                 false,
-        version:                "2.2.1"
+        version:                "2.2.1",
+        urlPrefix:              "++resource++eea.simile.ajax/"
     };
 
     SimileAjax.includeJavascriptFiles = function(doc, prefix, files) {
@@ -46,22 +47,22 @@ if (typeof SimileAjax === "undefined") {
 
     (function() {
         var an = navigator.appName.toLowerCase();
-        var ua = navigator.userAgent.toLowerCase(); 
-    
+        var ua = navigator.userAgent.toLowerCase();
+
         /*
          *  Operating system
          */
         SimileAjax.Platform.os.isMac = (ua.indexOf('mac') != -1);
         SimileAjax.Platform.os.isWin = (ua.indexOf('win') != -1);
-        SimileAjax.Platform.os.isWin32 = SimileAjax.Platform.isWin && (   
-            ua.indexOf('95') != -1 || 
-                ua.indexOf('98') != -1 || 
-                ua.indexOf('nt') != -1 || 
-                ua.indexOf('win32') != -1 || 
+        SimileAjax.Platform.os.isWin32 = SimileAjax.Platform.isWin && (
+            ua.indexOf('95') != -1 ||
+                ua.indexOf('98') != -1 ||
+                ua.indexOf('nt') != -1 ||
+                ua.indexOf('win32') != -1 ||
                 ua.indexOf('32bit') != -1
         );
         SimileAjax.Platform.os.isUnix = (ua.indexOf('x11') != -1);
-    
+
         /*
          *  Browser
          */
@@ -71,7 +72,7 @@ if (typeof SimileAjax === "undefined") {
         SimileAjax.Platform.browser.isFirefox = (ua.indexOf("firefox") != -1);
         SimileAjax.Platform.browser.isOpera = (an.indexOf("opera") != -1);
         SimileAjax.Platform.browser.isSafari = (an.indexOf("safari") != -1);
-    
+
         var parseVersionString = function(s) {
             var a = s.split(".");
             SimileAjax.Platform.browser.majorVersion = parseInt(a[0]);
@@ -81,7 +82,7 @@ if (typeof SimileAjax === "undefined") {
             var i = s.indexOf(sub, start);
             return i >= 0 ? i : s.length;
         };
-    
+
         if (SimileAjax.Platform.browser.isMozilla) {
             var offset = ua.indexOf("mozilla/");
             if (offset >= 0) {
@@ -106,7 +107,7 @@ if (typeof SimileAjax === "undefined") {
                 parseVersionString(ua.substring(offset + 8, indexOf(ua, " ", offset)));
             }
         }
-    
+
         if (!("localeCompare" in String.prototype)) {
             String.prototype.localeCompare = function (s) {
                 if (this < s) return -1;
@@ -139,7 +140,7 @@ if (typeof SimileAjax === "undefined") {
         "window-manager.js"
     ];
 
-    Exhibit.prefixURLs(scriptURLs, Exhibit.TimeExtension.params.timelinePrefix + "/ajax/2.2.1/scripts/", ajaxURLs);
+    Exhibit.prefixURLs(scriptURLs, SimileAjax.urlPrefix + "scripts/", ajaxURLs);
     Exhibit.includeJavascriptFiles(null, scriptURLs);
 
     SimileAjax.loaded = true;
