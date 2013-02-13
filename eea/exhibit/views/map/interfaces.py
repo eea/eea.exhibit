@@ -275,6 +275,37 @@ class IExhibitMapEdit(Interface):
         default=6
     )
 
+    ex_borderOpacity = schema.Float(
+        title=_(u"Border Opacity"),
+        description=_(u"when drawing polygons or polylines, the default "
+                      "opacity of the border or line"),
+        required=False,
+        default=0.5
+    )
+
+    ex_borderWidth = schema.Int(
+        title=_(u"Border width"),
+        description=_(u"when drawing polygons or polylines, the default "
+                      "width of the border or line"),
+        required=False,
+        default=1
+    )
+
+    ex_borderColor = schema.TextLine(
+        title=_(u"Border color"),
+        description=_(u"when drawing polygons or polylines, the default "
+                      "color of the border"),
+        required=False,
+        default=u""
+    )
+
+    ex_opacity = schema.Float(
+        title=_(u"Opacity"),
+        description=_(u"opacity"),
+        required=False,
+        default=0.7
+    )
+
     ex_sizeLegendLabel = schema.TextLine(
         title=_(u"Legend label"),
         description=_(u"legend label"),
@@ -335,6 +366,26 @@ class IExhibitMapEdit(Interface):
             "with which longitude."),
         required=False,
         default=u""
+    )
+
+    ex_latlngOrder = schema.Choice(
+        title=_(u"Lat lng order"),
+        description=_(u"whether the data is provided in the form of "
+                      "(latitude, longitude) or the reverse"),
+        required=False,
+        default=u"latlng",
+        vocabulary=SimpleVocabulary([
+            SimpleTerm(u"latlng", u"latlng", u"(latitude, longitude)"),
+            SimpleTerm(u"lnglat", u"lnglat", u"(longitude, latitude)"),
+        ])
+    )
+
+    ex_latlngPairSeparator = schema.TextLine(
+        title=_(u"Lat lng pair separator"),
+        description=_(u"character used to separate location "
+                      "pairs in a line or polygon"),
+        required=False,
+        default=u";"
     )
 
     ex_showToolbox = schema.Bool(

@@ -89,13 +89,6 @@ class IExhibitTileEdit(Interface):
         default=True
     )
 
-    ex_showSummary = schema.Bool(
-        title=_(u"Show summary"),
-        description=_(u"hide or show the # of results"),
-        required=False,
-        default=True
-    )
-
     ex_showDuplicates = schema.Bool(
         title=_(u"Show duplicates"),
         description=_(u"hwhether to ide or show multiple copies of the same "
@@ -103,13 +96,90 @@ class IExhibitTileEdit(Interface):
                       "sort/group order"),
         required=False,
         default=True
-    )
+)
 
     ex_abbreviatedCount = schema.Int(
         title=_(u"Abbreviated Count"),
         description=_(u"how many items to show if 'Show all' is false"),
         required=False,
         default=10
+    )
+
+    ex_showHeader = schema.Bool(
+        title=_(u"Show header"),
+        description=_(u"hide or show the header"),
+        required=False,
+        default=True
+    )
+
+    ex_showSummary = schema.Bool(
+        title=_(u"Show summary"),
+        description=_(u"hide or show the # of results"),
+        required=False,
+        default=True
+    )
+
+    ex_showControls = schema.Bool(
+        title=_(u"Show controls"),
+        description=_(u"hide or show the controls"),
+        required=False,
+        default=True
+    )
+
+    ex_showFooter = schema.Bool(
+        title=_(u"Show footer"),
+        description=_(u"hide or show the Footer"),
+        required=False,
+        default=True
+    )
+
+    ex_paginate = schema.Bool(
+        title=_(u"Paginate"),
+        description=_(u"Group results into pages, that can be navigated"
+                      " backward or forward"),
+        required=False,
+        default=False
+    )
+
+    ex_pageSize = schema.Int(
+        title=_(u"Page size"),
+        description=_(u"Number of results to show on each page, if "
+                      "Paginate = true"),
+        required=False,
+        default=20
+    )
+
+    ex_pageWindow =  schema.Int(
+        title=_(u"Page window"),
+        description=_(u"page window"),
+        required=False,
+        default=2
+    )
+
+    ex_page = schema.Int(
+        title=_(u"Page"),
+        description=_(u"page"),
+        required=False,
+        default=0
+    )
+
+    ex_alwaysShowPagingControls = schema.Bool(
+        title=_(u"Always show paging controls"),
+        description=_(u"show paging controls"),
+        required=False,
+        default=False
+    )
+
+    ex_pagingControlLocations = schema.Choice(
+        title=_(u"Paging control locations"),
+        description=_(u"location of page controls"),
+        required=False,
+        default=u"topbottom",
+        vocabulary=SimpleVocabulary([
+            SimpleTerm(u"top", u"top", u"Top"),
+            SimpleTerm(u"bottom", u"bottom", u"Bottom"),
+            SimpleTerm(u"topbottom", u"topbottom", u"Top and Bottom"),
+        ])
     )
 
     ex_showToolbox = schema.Bool(
