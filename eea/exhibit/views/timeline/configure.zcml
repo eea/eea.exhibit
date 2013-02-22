@@ -3,21 +3,21 @@
   xmlns:daviz="http://namespaces.zope.org/daviz"
   xmlns:browser="http://namespaces.zope.org/browser">
 
-  <daviz:view name="daviz.timeline" />
-
-  <browser:page
+  <daviz:view
     for="eea.app.visualization.interfaces.IVisualizationEnabled"
     name="daviz.timeline"
     template="view.pt"
     class=".view.View"
     permission="zope2.View"
+    title="Timeline View"
     />
 
-  <browser:page
+  <daviz:edit
     for="eea.app.visualization.interfaces.IVisualizationEnabled"
-    name="daviz.timeline.edit"
+    name="daviz.timeline"
     class=".edit.Edit"
     permission="eea.app.visualization.configure"
+    title="Timeline View"
     />
 
   <subscriber
