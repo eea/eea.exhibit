@@ -1,8 +1,11 @@
 Changelog
 =========
 
-7.0-dev - (unreleased)
+7.1-dev - (unreleased)
 ----------------------
+
+7.0 - (2013-02-25)
+------------------
 * Bug fix: Center timeline to current date
   [voineali refs #10176]
 * Feature: Upgraded to Simile Exhibit 3.0
