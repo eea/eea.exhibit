@@ -12,6 +12,8 @@ DavizEdit.Exhibit = function(context, options){
   self.context = context;
 
   self.settings = {
+    more: 'Advanced settings',
+    less: 'Basic settings'
   };
 
   if(options){
@@ -36,14 +38,14 @@ DavizEdit.Exhibit.prototype = {
       .addClass('btn-large')
       .addClass('disabled')
       .addClass('btn-advanced-settings')
-      .html('Advanced settings')
+      .html(self.settings.more)
       .click(function(){
         if(self.advanced.is(':visible')){
           self.advanced.slideUp('slow');
-          jQuery(this).html('Advanced settings');
+          jQuery(this).html(self.settings.more);
         }else{
           self.advanced.slideDown('slow');
-          jQuery(this).html('Basic settings');
+          jQuery(this).html(self.settings.less);
         }
         return false;
       }).insertBefore(self.advanced);
@@ -62,10 +64,20 @@ jQuery.fn.EEAExhibit = function(options){
 jQuery(document).ready(function(){
   // On init
   jQuery('.daviz-edit-fieldset:has(div[id*=ex_])').EEAExhibit();
+  jQuery('.daviz-facet-edit:has(div[id*=ex_])').EEAExhibit({
+    more: 'More options',
+    less: 'Less options'
+  });
 
   // On refresh
   jQuery(document).bind(DavizEdit.Events.views.refreshed, function(evt, data){
     jQuery('.daviz-edit-fieldset:has(div[id*=ex_])').EEAExhibit();
   });
 
+  jQuery(document).bind(DavizEdit.Events.facet.refreshed, function(evt, data){
+    jQuery('.daviz-facet-edit:has(div[id*=ex_])').EEAExhibit({
+      more: 'More options',
+      less: 'Less options'
+    });
+  });
 });

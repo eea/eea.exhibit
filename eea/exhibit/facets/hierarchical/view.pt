@@ -3,7 +3,7 @@
   label python:view.settings('label', '');">
 <div
   xmlns:ex="http://simile.mit.edu/2006/11/exhibit#"
-  ex:role="exhibit-facet" ex:facetClass="TextSearch" tal:attributes="
+  ex:role="exhibit-facet" ex:facetClass="HierarchicalFacet" tal:attributes="
   ex:expression string:.$name;
   ex:facetLabel string:$label;
   id string:$name-facet"

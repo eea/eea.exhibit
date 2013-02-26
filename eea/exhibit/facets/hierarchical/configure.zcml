@@ -4,20 +4,20 @@
 
   <facet:view
     for="eea.app.visualization.interfaces.IVisualizationEnabled"
-    name="daviz.cloud.facet"
+    name="daviz.hierarchical.facet"
     template="view.pt"
     class="eea.app.visualization.facets.view.ViewForm"
     allowed_interface="eea.app.visualization.facets.interfaces.IVisualizationFacet"
     permission="zope2.View"
-    title="Cloud"
+    title="Hierarchical"
     />
 
   <facet:edit
     for="eea.app.visualization.interfaces.IVisualizationEnabled"
-    name="daviz.cloud.facet"
+    name="daviz.hierarchical.facet"
     class="eea.app.visualization.facets.edit.Edit"
     permission="eea.app.visualization.configure"
-    title="Cloud"
+    title="Hierarchical"
     />
 
 </configure>

@@ -1,4 +1,22 @@
 <configure
+  xmlns:facet="http://namespaces.zope.org/davizfacet"
   xmlns="http://namespaces.zope.org/zope">
+
+  <facet:view
+    for="eea.app.visualization.interfaces.IVisualizationEnabled"
+    name="daviz.numeric.facet"
+    class=".view.View"
+    allowed_interface="eea.app.visualization.facets.interfaces.IVisualizationFacet"
+    permission="zope2.View"
+    title="Numeric Range"
+    />
+
+  <facet:edit
+    for="eea.app.visualization.interfaces.IVisualizationEnabled"
+    name="daviz.numeric.facet"
+    class=".edit.Edit"
+    permission="eea.app.visualization.configure"
+    title="Numeric Range"
+    />
 
 </configure>
