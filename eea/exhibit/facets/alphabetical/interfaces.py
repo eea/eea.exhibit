@@ -4,7 +4,7 @@ from zope import schema
 from eea.app.visualization.facets.interfaces import IVisualizationEditFacet
 from eea.app.visualization.config import EEAMessageFactory as _
 
-class INumericProperties(IVisualizationEditFacet):
+class IAlphabeticalProperties(IVisualizationEditFacet):
     """ Edit numeric facet
     """
     ex_height = schema.TextLine(

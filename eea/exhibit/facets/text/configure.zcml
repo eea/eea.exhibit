@@ -6,7 +6,7 @@
     for="eea.app.visualization.interfaces.IVisualizationEnabled"
     name="daviz.text.facet"
     template="view.pt"
-    class="eea.app.visualization.facets.view.ViewForm"
+    class=".view.View"
     allowed_interface="eea.app.visualization.facets.interfaces.IVisualizationFacet"
     permission="zope2.View"
     title="Text Search"
@@ -15,7 +15,7 @@
   <facet:edit
     for="eea.app.visualization.interfaces.IVisualizationEnabled"
     name="daviz.text.facet"
-    class="eea.app.visualization.facets.edit.Edit"
+    class=".edit.Edit"
     permission="eea.app.visualization.configure"
     title="Text Search"
     />

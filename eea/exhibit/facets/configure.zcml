@@ -3,10 +3,10 @@
   xmlns:browser="http://namespaces.zope.org/browser">
 
   <include package="eea.app.visualization" file="meta.zcml" />
+  <include package=".alphabetical" />
   <include package=".cloud" />
   <include package=".hierarchical" />
   <include package=".numeric" />
-  <include package=".slider" />
   <include package=".text" />
 
 </configure>

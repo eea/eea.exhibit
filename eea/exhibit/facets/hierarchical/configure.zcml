@@ -5,8 +5,7 @@
   <facet:view
     for="eea.app.visualization.interfaces.IVisualizationEnabled"
     name="daviz.hierarchical.facet"
-    template="view.pt"
-    class="eea.app.visualization.facets.view.ViewForm"
+    class=".view.View"
     allowed_interface="eea.app.visualization.facets.interfaces.IVisualizationFacet"
     permission="zope2.View"
     title="Hierarchical"
@@ -15,7 +14,7 @@
   <facet:edit
     for="eea.app.visualization.interfaces.IVisualizationEnabled"
     name="daviz.hierarchical.facet"
-    class="eea.app.visualization.facets.edit.Edit"
+    class=".edit.Edit"
     permission="eea.app.visualization.configure"
     title="Hierarchical"
     />

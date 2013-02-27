@@ -4,20 +4,19 @@
 
   <facet:view
     for="eea.app.visualization.interfaces.IVisualizationEnabled"
-    name="daviz.slider.facet"
-    template="view.pt"
-    class="eea.app.visualization.facets.view.ViewForm"
+    name="daviz.alpharange.facet"
+    class=".view.View"
     allowed_interface="eea.app.visualization.facets.interfaces.IVisualizationFacet"
     permission="zope2.View"
-    title="Slider"
+    title="Alpha Range"
     />
 
   <facet:edit
     for="eea.app.visualization.interfaces.IVisualizationEnabled"
-    name="daviz.slider.facet"
-    class="eea.app.visualization.facets.edit.Edit"
+    name="daviz.alpharange.facet"
+    class=".edit.Edit"
     permission="eea.app.visualization.configure"
-    title="Slider"
+    title="Alpha Range"
     />
 
 </configure>
