@@ -7,6 +7,7 @@
   <include package=".cloud" />
   <include package=".hierarchical" />
   <include package=".numeric" />
+  <include package=".slider" />
   <include package=".text" />
 
 </configure>

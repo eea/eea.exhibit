@@ -1,0 +1,23 @@
+<configure
+  xmlns:facet="http://namespaces.zope.org/davizfacet"
+  xmlns="http://namespaces.zope.org/zope">
+
+  <!-- XXX Slider JS Facet not implemented yet in Simile Exhibit 3.0 -->
+  <!--facet:view
+    for="eea.app.visualization.interfaces.IVisualizationEnabled"
+    name="daviz.slider.facet"
+    class=".view.View"
+    allowed_interface="eea.app.visualization.facets.interfaces.IVisualizationFacet"
+    permission="zope2.View"
+    title="Slider Range"
+    />
+
+  <facet:edit
+    for="eea.app.visualization.interfaces.IVisualizationEnabled"
+    name="daviz.slider.facet"
+    class=".edit.Edit"
+    permission="eea.app.visualization.configure"
+    title="Slider Range"
+    /-->
+
+</configure>
