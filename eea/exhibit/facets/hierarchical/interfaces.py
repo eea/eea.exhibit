@@ -1,12 +1,21 @@
 """ Interfaces
 """
 from zope import schema
+from zope.schema.vocabulary import SimpleVocabulary
+from zope.schema.vocabulary import SimpleTerm
 from eea.app.visualization.facets.interfaces import IVisualizationEditFacet
 from eea.app.visualization.config import EEAMessageFactory as _
 
 class IHierarchicalProperties(IVisualizationEditFacet):
-    """ Edit numeric facet
+    """ Edit facet
     """
+    ex_uniformGrouping = schema.TextLine(
+        title=_(u"Uniform grouping"),
+        description=_(u"group items by this field (e.g. '.subtopicOf')"),
+        required=True,
+        default=u".subtopicOf"
+    )
+
     ex_fixedOrder = schema.TextLine(
         title=_(u"Fixed Order"),
         description=_(u"semicolon-separated list of values specifying a "

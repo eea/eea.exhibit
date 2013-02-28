@@ -26,7 +26,7 @@ DavizEdit.Exhibit = function(context, options){
 DavizEdit.Exhibit.prototype = {
   initialize: function(){
     var self = this;
-    jQuery('div[id*=ex_]', self.context).wrapAll(
+    jQuery('div[id*="ex_"],div[id$="-type"]', self.context).wrapAll(
       '<div class="eea-exhibit-group-advanced" />'
     );
 

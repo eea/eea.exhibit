@@ -5,7 +5,7 @@ from eea.app.visualization.facets.interfaces import IVisualizationEditFacet
 from eea.app.visualization.config import EEAMessageFactory as _
 
 class INumericProperties(IVisualizationEditFacet):
-    """ Edit numeric facet
+    """ Edit facet
     """
     ex_height = schema.TextLine(
         title=_(u"Height"),

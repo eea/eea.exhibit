@@ -19,7 +19,7 @@ Exhibit.TextSearchFacet = function(containerElmt, uiContext) {
     this._text = null;
     this._dom = null;
     this._timerID = null;
-    
+
     this._onRootItemsChanged = function(evt) {
         if (typeof self._itemToValue !== "undefined") {
             delete self._itemToValue;
@@ -34,7 +34,7 @@ Exhibit.TextSearchFacet = function(containerElmt, uiContext) {
 /**
  * @private
  * @constant
- */ 
+ */
 Exhibit.TextSearchFacet._settingSpecs = {
     "queryParamName":   { "type": "text" },
     "requiresEnter":    { "type": "boolean", "defaultValue": false}
@@ -49,13 +49,13 @@ Exhibit.TextSearchFacet._settingSpecs = {
 Exhibit.TextSearchFacet.create = function(configuration, containerElmt, uiContext) {
     var uiContext = Exhibit.UIContext.create(configuration, uiContext);
     var facet = new Exhibit.TextSearchFacet(containerElmt, uiContext);
-    
+
     Exhibit.TextSearchFacet._configure(facet, configuration);
-    
+
     facet._initializeUI();
     uiContext.getCollection().addFacet(facet);
     facet.register();
-    
+
     return facet;
 };
 
@@ -69,19 +69,19 @@ Exhibit.TextSearchFacet.createFromDOM = function(configElmt, containerElmt, uiCo
     var configuration = Exhibit.getConfigurationFromDOM(configElmt);
     var uiContext = Exhibit.UIContext.createFromDOM(configElmt, uiContext);
     var facet = new Exhibit.TextSearchFacet(
-        (typeof containerElmt !== "undefined" && containerElmt !== null) ? containerElmt : configElmt, 
+        (typeof containerElmt !== "undefined" && containerElmt !== null) ? containerElmt : configElmt,
         uiContext
     );
-    
+
     Exhibit.SettingsUtilities.collectSettingsFromDOM(configElmt, facet.getSettingSpecs(), facet._settings);
-    
+
     try {
         var s = Exhibit.getAttribute(configElmt, "expressions");
         if (typeof s !== "undefined" && s !== null && s.length > 0) {
             facet.setExpressionString(s);
             facet.setExpression(Exhibit.ExpressionParser.parseSeveral(s));
         }
-        
+
         var query = Exhibit.getAttribute(configElmt, "query");
         if (typeof query !== "undefined" && query !== null && query.length > 0) {
             facet._text = query;
@@ -90,11 +90,11 @@ Exhibit.TextSearchFacet.createFromDOM = function(configElmt, containerElmt, uiCo
         Exhibit.Debug.exception(e, Exhibit._("%facets.error.configuration", "TextSearchFacet"));
     }
     Exhibit.TextSearchFacet._configure(facet, configuration);
-    
+
     facet._initializeUI();
     uiContext.getCollection().addFacet(facet);
     facet.register();
-    
+
     return facet;
 };
 
@@ -105,7 +105,7 @@ Exhibit.TextSearchFacet.createFromDOM = function(configElmt, containerElmt, uiCo
 Exhibit.TextSearchFacet._configure = function(facet, configuration) {
     var expressions, expressionsStrings;
     Exhibit.SettingsUtilities.collectSettings(configuration, facet.getSettingSpecs(), facet._settings);
-    
+
     if (typeof configuration.expressions !== "undefined") {
         expressions = [];
         expressionsStrings = [];
@@ -141,7 +141,7 @@ Exhibit.TextSearchFacet.prototype._dispose = function() {
         "onRootItemsChanged.exhibit",
         this._onRootItemsChanged
     );
-    
+
     this._text = null;
     this._dom = null;
     this._itemToValue = null;
@@ -183,12 +183,12 @@ Exhibit.TextSearchFacet.prototype.setText = function(text) {
     if (typeof text !== "undefined" && text !== null) {
         text = text.trim();
         Exhibit.jQuery(this._dom.input).val(text);
-        
+
         text = text.length > 0 ? text : null;
     } else {
         Exhibit.jQuery(this._dom.input).val("");
     }
-    
+
     if (text !== this._text) {
         this._text = text;
         this._notifyCollection();
@@ -209,11 +209,11 @@ Exhibit.TextSearchFacet.prototype.restrict = function(items) {
             [ this._text ]
         );
         this._buildMaps();
-        
+
         set = new Exhibit.Set();
         itemToValue = this._itemToValue;
-        text = this._text.toLowerCase();
-        
+        text = this._text ? this._text.toLowerCase() : "";
+
         items.visit(function(item) {
             var values, v;
             if (typeof itemToValue[item] !== "undefined") {
@@ -298,7 +298,7 @@ Exhibit.TextSearchFacet.prototype._onTextInputKeyUp = function(evt) {
             self._onTimeout();
         }, 500);
     } else {
-        newText = Exhibit.jQuery(this._dom.input).val().trim(); 
+        newText = Exhibit.jQuery(this._dom.input).val().trim();
         if (newText.length === 0 || evt.which === 13) { // arbitrary
             this._timerID = window.setTimeout(function() {
                 self._onTimeout();
@@ -314,16 +314,16 @@ Exhibit.TextSearchFacet.prototype._onTimeout = function() {
     var newText, self, oldText;
 
     this._timerID = null;
-    
+
     newText = Exhibit.jQuery(this._dom.input).val().trim();
     if (newText.length === 0) {
         newText = null;
     }
-    
+
     if (newText !== this._text) {
         self = this;
         oldText = this._text;
-        
+
         Exhibit.History.pushComponentState(
             this,
             Exhibit.Facet._registryKey,
@@ -345,7 +345,7 @@ Exhibit.TextSearchFacet.prototype._buildMaps = function() {
         itemToValue = {};
         allItems = this.getUIContext().getCollection().getAllItems();
         database = this.getUIContext().getDatabase();
-        
+
         expressions = this.getExpression();
         if (expressions !== null && expressions.length > 0) {
             allItems.visit(function(item) {
@@ -368,7 +368,7 @@ Exhibit.TextSearchFacet.prototype._buildMaps = function() {
                 itemToValue[item] = values;
             });
         }
-        
+
         this._itemToValue = itemToValue;
     }
 };

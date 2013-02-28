@@ -5,7 +5,6 @@
   <facet:view
     for="eea.app.visualization.interfaces.IVisualizationEnabled"
     name="daviz.text.facet"
-    template="view.pt"
     class=".view.View"
     allowed_interface="eea.app.visualization.facets.interfaces.IVisualizationFacet"
     permission="zope2.View"

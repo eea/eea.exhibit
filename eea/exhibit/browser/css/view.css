@@ -20,6 +20,38 @@
   width: 80%;
 }
 
+span.exhibit-cloudFacet-value,
+a.exhibit-facet-value-link,
+a.exhibit-facet-value-link:visited,
+#content a.exhibit-facet-value-link,
+#content a.exhibit-facet-value-link:visited {
+  /*color: #95B229*/
+}
+
+span.exhibit-cloudFacet-value {
+  color: #427597;
+}
+
+.exhibit-cloudFacet-body {
+  text-align: center;
+}
+
+.exhibit-facet-header-filterControl {
+  padding: 0.5em 0;
+}
+
+img.exhibit-facet-header-collapse {
+  float: left;
+  padding: 0.9em 0.5em;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b1c748), to(#777c1f));
+  background-image: -webkit-linear-gradient(center top , #b1c748, #777c1f);
+  background-image: -moz-linear-gradient(center top , #b1c748, #777c1f);
+  background-image: -ms-linear-gradient(center top , #b1c748, #777c1f);
+  background-image: -o-linear-gradient(center top , #b1c748, #777c1f);
+  box-shadow: 0px 2px 2px #888;
+}
+
+span.exhibit-cloudFacet-header-title,
 span.exhibit-facet-header-title {
   display: block;
   font-weight: normal;
@@ -151,4 +183,8 @@ div div.exhibit-facet-header-filterControl {
 
 #daviz-view .exhibit-bookmarkWidget-popup {
   display: none;
+}
+
+.daviz-facets .exhibit-text-facet {
+  width: 97%;
 }

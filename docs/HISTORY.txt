@@ -3,6 +3,9 @@ Changelog
 
 7.1-dev - (unreleased)
 ----------------------
+* Feature: Added more exhibit facets (Alphabetical Range, Cloud, Hierarhical,
+  Numeric Range and Text Search)
+  [voineali refs #10007]
 
 7.0 - (2013-02-25)
 ------------------

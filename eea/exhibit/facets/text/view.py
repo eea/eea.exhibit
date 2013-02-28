@@ -1,4 +1,4 @@
-""" Numeric facets view module
+""" Facet view module
 """
 from eea.app.visualization.facets.view import ViewForm
 from eea.exhibit.facets.text.interfaces import ITextProperties
