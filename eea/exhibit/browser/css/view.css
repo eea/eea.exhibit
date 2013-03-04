@@ -51,6 +51,7 @@ img.exhibit-facet-header-collapse {
   box-shadow: 0px 2px 2px #888;
 }
 
+span.exhibit-flowingFacet-header-title,
 span.exhibit-cloudFacet-header-title,
 span.exhibit-facet-header-title {
   display: block;
