@@ -7,6 +7,11 @@
     directory="ajax/2.2.1/api"
   />
 
+<browser:resourceDirectory
+    name="eea.simile.exhibit2"
+    directory="exhibit/2.2.0/api"
+  />
+
   <browser:resourceDirectory
     name="eea.simile.exhibit"
     directory="exhibit/3.0.0/api"
