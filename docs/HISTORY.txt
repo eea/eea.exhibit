@@ -3,6 +3,8 @@ Changelog
 
 7.1-dev - (unreleased)
 ----------------------
+* Feature: added information for contributors
+  [ciobabog refs #13892]
 * Feature: Added more exhibit facets (Alphabetical Range, Cloud, Hierarhical,
   Numeric Range and Text Search)
   [voineali refs #10007]
