@@ -25,4 +25,12 @@
 
   <include package=".res" />
 
+  <browser:page
+    for="eea.app.visualization.interfaces.IVisualizationEnabled"
+    name="eea.exhibit.resources.header"
+    class=".app.view.View"
+    template="zpt/head.pt"
+    permission="zope2.View"
+    />
+
 </configure>

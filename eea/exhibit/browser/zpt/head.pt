@@ -1,0 +1,44 @@
+<tal:exhibit>
+
+ <!-- Custom babel-translators -->
+  <link rel="exhibit/babel-translator"
+    tal:attributes="href string:${here/absolute_url}/babel-translator" />
+
+  <!-- Related items merged JSON with own JSON -->
+  <link rel="exhibit-data" type="application/json"
+    tal:attributes="href string:${here/absolute_url}/daviz.json" />
+
+  <!-- External sources JSONs -->
+    <tal:additional repeat="source python:view.sources">
+    <link rel="exhibit/data"
+      tal:attributes="
+      type string:application/${source/type};
+      href string:${source/name};
+      data-ex-converter python:source.get('converter', None) or None;" />
+    </tal:additional>
+
+  <!-- include exhibit api -->
+  <script type="text/javascript">
+  <!--
+    var daviz_jQuery = window.jQuery;
+    var daviz_$ = window.$;
+  //-->
+  </script>
+
+  <!-- XXX Dynamically insert these scripts from pluggable visualization library -->
+  <script tal:condition="exists:here/++resource++eea.simile.exhibit/exhibit-api.js"
+    tal:attributes="src string:++resource++eea.simile.exhibit/exhibit-api.js?bundle=false" type="text/javascript"></script>
+  <link rel="exhibit-extension" type="text/javascript"
+    tal:condition="exists:here/++resource++eea.simile.exhibit/extensions/time/time-extension.js"
+    tal:attributes="href string:++resource++eea.simile.exhibit/extensions/time/time-extension.js?bundle=false" />
+  <link rel="exhibit-extension" type="text/javscript"
+    tal:condition="exists:here/++resource++eea.simile.exhibit/extensions/map/map-extension.js"
+    tal:attributes="href string:++resource++eea.simile.exhibit/extensions/map/map-extension.js?bundle=false&service=google" />
+  <script type="text/javascript">
+  <!--
+    window.jQuery = daviz_jQuery;
+    window.$ = daviz_$;
+  //-->
+  </script>
+
+</tal:exhibit>

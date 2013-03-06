@@ -12,4 +12,9 @@
     provides="eea.app.visualization.interfaces.IVisualizationEditResources"
     factory=".resources.EditResources" />
 
+  <utility
+    name="eea.exhibit.resources.header"
+    provides="eea.app.visualization.interfaces.IVisualizationViewHeader"
+    factory=".resources.Header" />
+
 </configure>

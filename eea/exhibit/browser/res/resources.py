@@ -1,8 +1,10 @@
 """ CSS/JS resources provided by this package
 """
 from zope.interface import implements
+from zope.component import queryMultiAdapter
 from eea.app.visualization.interfaces import IVisualizationViewResources
 from eea.app.visualization.interfaces import IVisualizationEditResources
+from eea.app.visualization.interfaces import IVisualizationViewHeader
 
 class ViewResources(object):
     """ Resources to be used in view mode
@@ -69,3 +71,13 @@ class EditResources(object):
         return [
             '++resource++eea.exhibit.edit.js',
         ]
+
+class ViewHeader(object):
+    """ Custom header for Exhibit Views
+    """
+    implements(IVisualizationViewHeader)
+
+    def __call__(self, context, request):
+        header = queryMultiAdapter((context, request),
+                                 name=u'eea.exhibit.resources.header')
+        return header()
