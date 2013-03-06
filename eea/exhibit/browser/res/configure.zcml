@@ -15,6 +15,6 @@
   <utility
     name="eea.exhibit.resources.header"
     provides="eea.app.visualization.interfaces.IVisualizationViewHeader"
-    factory=".resources.Header" />
+    factory=".resources.ViewHeader" />
 
 </configure>

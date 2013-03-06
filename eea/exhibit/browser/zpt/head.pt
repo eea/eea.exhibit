@@ -10,7 +10,7 @@
 
   <!-- External sources JSONs -->
     <tal:additional repeat="source python:view.sources">
-    <link rel="exhibit/data"
+    <link rel="exhibit-data"
       tal:attributes="
       type string:application/${source/type};
       href string:${source/name};
@@ -26,14 +26,13 @@
   </script>
 
   <!-- XXX Dynamically insert these scripts from pluggable visualization library -->
-  <script tal:condition="exists:here/++resource++eea.simile.exhibit/exhibit-api.js"
-    tal:attributes="src string:++resource++eea.simile.exhibit/exhibit-api.js?bundle=false" type="text/javascript"></script>
+  <script type="text/javascript"
+    tal:attributes="src string:++resource++eea.simile.exhibit/exhibit-api.js"></script>
   <link rel="exhibit-extension" type="text/javascript"
-    tal:condition="exists:here/++resource++eea.simile.exhibit/extensions/time/time-extension.js"
-    tal:attributes="href string:++resource++eea.simile.exhibit/extensions/time/time-extension.js?bundle=false" />
+    tal:attributes="href string:++resource++eea.simile.exhibit/extensions/time/time-extension.js" />
   <link rel="exhibit-extension" type="text/javscript"
-    tal:condition="exists:here/++resource++eea.simile.exhibit/extensions/map/map-extension.js"
-    tal:attributes="href string:++resource++eea.simile.exhibit/extensions/map/map-extension.js?bundle=false&service=google" />
+    tal:attributes="href string:++resource++eea.simile.exhibit/extensions/map/map-extension.js?service=google" />
+
   <script type="text/javascript">
   <!--
     window.jQuery = daviz_jQuery;
