@@ -1,4 +1,4 @@
-<tal:exhibit>
+<tal:exhibit tal:condition="view/available">
 
  <!-- Custom babel-translators -->
   <link rel="exhibit/babel-translator"

@@ -3,6 +3,10 @@ Changelog
 
 7.1-dev - (unreleased)
 ----------------------
+* Change: Moved eea.exhibit specific code from eea.app.visualization to this
+  package and load exhibit API only if there is at least one Exhibit
+  Visualization enabled
+  [voineali refs #14003]
 * Feature: added information for contributors
   [ciobabog refs #13892]
 * Feature: Added more exhibit facets (Alphabetical Range, Cloud, Hierarhical,
