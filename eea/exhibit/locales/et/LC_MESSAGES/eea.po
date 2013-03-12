@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-02-13 10:07+0000\n"
+"POT-Creation-Date: 2013-03-12 16:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,10 +66,23 @@ msgstr ""
 msgid "Center"
 msgstr ""
 
+#: ../../exhibit/facets/alphabetical/interfaces.py:41
+#: ../../exhibit/facets/hierarchical/interfaces.py:88
+#: ../../exhibit/facets/numeric/interfaces.py:41
+msgid "Collapsed"
+msgstr ""
+
+#: ../../exhibit/facets/alphabetical/interfaces.py:34
+#: ../../exhibit/facets/hierarchical/interfaces.py:81
+#: ../../exhibit/facets/numeric/interfaces.py:34
+msgid "Collapsible"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:130
 msgid "Color"
 msgstr ""
 
+#: ../../exhibit/facets/hierarchical/interfaces.py:74
 #: ../../exhibit/views/map/interfaces.py:145
 #: ../../exhibit/views/timeline/interfaces.py:84
 msgid "Color coder"
@@ -106,6 +119,14 @@ msgstr ""
 msgid "End date"
 msgstr ""
 
+#: ../../exhibit/facets/hierarchical/interfaces.py:20
+msgid "Fixed Order"
+msgstr ""
+
+#: ../../exhibit/controlpanel/controlpanel.py:32
+msgid "Force Exhibit 2 for Internet Explorer"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:19
 #: ../../exhibit/views/tabular/interfaces.py:17
 #: ../../exhibit/views/tile/interfaces.py:19
@@ -118,6 +139,12 @@ msgstr ""
 
 #: ../../exhibit/views/tile/interfaces.py:85
 msgid "Grouped"
+msgstr ""
+
+#: ../../exhibit/facets/alphabetical/interfaces.py:11
+#: ../../exhibit/facets/cloud/interfaces.py:11
+#: ../../exhibit/facets/hierarchical/interfaces.py:67
+msgid "Height"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:175
@@ -156,6 +183,11 @@ msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:189
 msgid "Icon size"
+msgstr ""
+
+#: ../../exhibit/facets/alphabetical/interfaces.py:27
+#: ../../exhibit/facets/numeric/interfaces.py:27
+msgid "Interval"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:372
@@ -200,6 +232,14 @@ msgstr ""
 msgid "Marker scale"
 msgstr ""
 
+#: ../../exhibit/facets/cloud/interfaces.py:34
+msgid "Minimum count"
+msgstr ""
+
+#: ../../exhibit/facets/cloud/interfaces.py:27
+msgid "Missing label"
+msgstr ""
+
 #: ../../exhibit/views/tile/interfaces.py:146
 msgid "Number of results to show on each page, if Paginate = true"
 msgstr ""
@@ -210,6 +250,10 @@ msgstr ""
 
 #: ../../exhibit/views/tile/interfaces.py:36
 msgid "Orders"
+msgstr ""
+
+#: ../../exhibit/facets/hierarchical/interfaces.py:51
+msgid "Others label"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:84
@@ -260,12 +304,26 @@ msgstr ""
 msgid "Proxy"
 msgstr ""
 
+#: ../../exhibit/facets/text/interfaces.py:11
+msgid "Query param name"
+msgstr ""
+
+#: ../../exhibit/facets/text/interfaces.py:18
+msgid "Requires Enter"
+msgstr ""
+
 #: ../../exhibit/views/tabular/interfaces.py:68
 msgid "Row styler"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:78
 msgid "Scale control"
+msgstr ""
+
+#: ../../exhibit/facets/alphabetical/interfaces.py:18
+#: ../../exhibit/facets/hierarchical/interfaces.py:58
+#: ../../exhibit/facets/numeric/interfaces.py:18
+msgid "Scroll"
 msgstr ""
 
 #: ../../exhibit/views/tabular/interfaces.py:24
@@ -321,6 +379,10 @@ msgstr ""
 msgid "Show header"
 msgstr ""
 
+#: ../../exhibit/facets/cloud/interfaces.py:18
+msgid "Show missing"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:345
 #: ../../exhibit/views/tile/interfaces.py:116
 #: ../../exhibit/views/timeline/interfaces.py:165
@@ -353,6 +415,14 @@ msgstr ""
 msgid "Sort column"
 msgstr ""
 
+#: ../../exhibit/facets/hierarchical/interfaces.py:40
+msgid "Sort direction"
+msgstr ""
+
+#: ../../exhibit/facets/hierarchical/interfaces.py:29
+msgid "Sort mode"
+msgstr ""
+
 #: ../../exhibit/views/timeline/interfaces.py:40
 msgid "Specify date or starting date"
 msgstr ""
@@ -379,6 +449,11 @@ msgstr ""
 
 #: ../../exhibit/views/tabular/interfaces.py:76
 msgid "Table styler"
+msgstr ""
+
+#: ../../exhibit/facets/alphabetical/interfaces.py:28
+#: ../../exhibit/facets/numeric/interfaces.py:28
+msgid "The interval in number ranges"
 msgstr ""
 
 #: ../../exhibit/views/map/view.pt:10
@@ -417,6 +492,14 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
+#: ../../exhibit/facets/hierarchical/interfaces.py:13
+msgid "Uniform grouping"
+msgstr ""
+
+#: ../../exhibit/controlpanel/controlpanel.py:20
+msgid "Version"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:66
 msgid "Zoom"
 msgstr ""
@@ -431,6 +514,18 @@ msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:385
 msgid "character used to separate location pairs in a line or polygon"
+msgstr ""
+
+#: ../../exhibit/facets/hierarchical/interfaces.py:89
+msgid "collapsed"
+msgstr ""
+
+#: ../../exhibit/facets/hierarchical/interfaces.py:82
+msgid "collapsible"
+msgstr ""
+
+#: ../../exhibit/facets/hierarchical/interfaces.py:75
+msgid "color coder"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:318
@@ -474,6 +569,10 @@ msgstr ""
 msgid "expression for getting the keys used to size-code the map markers"
 msgstr ""
 
+#: ../../exhibit/controlpanel/controlpanel.py:33
+msgid "force Simile Exhibit 2 for Internet Explorer users as Simile Exhibit 3 is not stable on this browser, yet. Leave this option selected if you're unsure."
+msgstr ""
+
 #: ../../exhibit/views/tabular/interfaces.py:77
 msgid "function that takes 2 arguments (table, database) and is called to style the table"
 msgstr ""
@@ -482,12 +581,22 @@ msgstr ""
 msgid "function that takes 3 arguments (item, database, tr) and is called to style each row"
 msgstr ""
 
+#: ../../exhibit/facets/hierarchical/interfaces.py:14
+msgid "group items by this field (e.g. '.subtopicOf')"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:266
 msgid "height of pins of map markers (in pixels)"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:245
 msgid "height of shape of map markers (in pixels)"
+msgstr ""
+
+#: ../../exhibit/facets/alphabetical/interfaces.py:12
+#: ../../exhibit/facets/cloud/interfaces.py:12
+#: ../../exhibit/facets/hierarchical/interfaces.py:68
+msgid "height of the facet's body, e.g., '20em', '200px'"
 msgstr ""
 
 #: ../../exhibit/views/timeline/interfaces.py:63
@@ -524,6 +633,10 @@ msgstr ""
 
 #: ../../exhibit/views/tile/interfaces.py:45
 msgid "how to sort each of the expressions in the 'Orders' setting"
+msgstr ""
+
+#: ../../exhibit/facets/hierarchical/interfaces.py:30
+msgid "how to sort the choices in the facet"
 msgstr ""
 
 #: ../../exhibit/views/timeline/interfaces.py:151
@@ -564,6 +677,12 @@ msgstr ""
 msgid "id of an icon coder"
 msgstr ""
 
+#: ../../exhibit/facets/alphabetical/interfaces.py:19
+#: ../../exhibit/facets/hierarchical/interfaces.py:59
+#: ../../exhibit/facets/numeric/interfaces.py:19
+msgid "if true, facet values are in a scrollable window of fixed size. If false, all facet values are shown in as much space as needed, without a scroll bar."
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:60
 msgid "latitude/longitude where the map centers at the beginning"
 msgstr ""
@@ -580,8 +699,20 @@ msgstr ""
 msgid "marker scale"
 msgstr ""
 
+#: ../../exhibit/facets/cloud/interfaces.py:35
+msgid "minimum count"
+msgstr ""
+
+#: ../../exhibit/facets/cloud/interfaces.py:28
+msgid "missing label"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:304
 msgid "opacity"
+msgstr ""
+
+#: ../../exhibit/facets/hierarchical/interfaces.py:52
+msgid "others label"
 msgstr ""
 
 #: ../../exhibit/views/tile/interfaces.py:161
@@ -600,8 +731,20 @@ msgstr ""
 msgid "percents that the top band takes up"
 msgstr ""
 
+#: ../../exhibit/facets/text/interfaces.py:12
+msgid "query param name"
+msgstr ""
+
+#: ../../exhibit/facets/text/interfaces.py:19
+msgid "requires enter"
+msgstr ""
+
 #: ../../exhibit/views/map/interfaces.py:210
 msgid "scaling adjustment to icon images after fitting them"
+msgstr ""
+
+#: ../../exhibit/facets/hierarchical/interfaces.py:21
+msgid "semicolon-separated list of values specifying a fixed order for sorting the choices in the facet, e.g., 'Mo;Tu;We;Th;Fr' for weekdays"
 msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:231
@@ -634,6 +777,10 @@ msgstr ""
 
 #: ../../exhibit/views/timeline/interfaces.py:121
 msgid "unit of the top band"
+msgstr ""
+
+#: ../../exhibit/controlpanel/controlpanel.py:21
+msgid "use the following version of Simile Exhibit Framework"
 msgstr ""
 
 #: ../../exhibit/views/tabular/interfaces.py:85
@@ -685,6 +832,14 @@ msgstr ""
 
 #: ../../exhibit/views/map/interfaces.py:104
 msgid "whether the map bubble points at the top or at the bottom of map markers"
+msgstr ""
+
+#: ../../exhibit/facets/cloud/interfaces.py:19
+msgid "whether to provide a selection for items missing the facet -- this will suppress the '(missing this field)' text"
+msgstr ""
+
+#: ../../exhibit/facets/hierarchical/interfaces.py:41
+msgid "whether to reverse the sort direction"
 msgstr ""
 
 #: ../../exhibit/views/tile/interfaces.py:77
