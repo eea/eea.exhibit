@@ -29,19 +29,19 @@
 
   <!-- Exhibit API -->
   <script type="text/javascript" tal:condition="view/exhibit3"
-    tal:attributes="src string:++resource++eea.simile.exhibit/exhibit-api.js?bundle=$bundle"></script>
+    tal:attributes="src string:++resource++eea.simile.exhibit3/exhibit-api.js?bundle=$bundle"></script>
   <script type="text/javascript" tal:condition="not:view/exhibit3"
     tal:attributes="src string:++resource++eea.simile.exhibit2/exhibit-api.js?bundle=$bundle"></script>
 
   <!-- Exhibit Timeline Extension -->
   <link rel="exhibit-extension" type="text/javascript" tal:condition="view/exhibit3"
-    tal:attributes="href string:++resource++eea.simile.exhibit/extensions/time/time-extension.js?bundle=$bundle" />
+    tal:attributes="href string:++resource++eea.simile.exhibit3/extensions/time/time-extension.js?bundle=$bundle" />
   <script type="text/javascript" tal:condition="not:view/exhibit3"
     tal:attributes="src string:++resource++eea.simile.exhibit2/extensions/time/time-extension.js?bundle=$bundle"></script>
 
   <!-- Exhibit Map Extension -->
   <link rel="exhibit-extension" type="text/javascript" tal:condition="view/exhibit3"
-    tal:attributes="href string:++resource++eea.simile.exhibit/extensions/map/map-extension.js?service=google&bundle=$bundle" />
+    tal:attributes="href string:++resource++eea.simile.exhibit3/extensions/map/map-extension.js?service=google&bundle=$bundle" />
   <script type="text/javascript" tal:condition="not:view/exhibit3"
     tal:attributes="src string:++resource++eea.simile.exhibit2/extensions/map/map-extension.js?service=google&bundle=$bundle"></script>
 

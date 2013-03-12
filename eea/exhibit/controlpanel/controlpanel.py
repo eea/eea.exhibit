@@ -27,4 +27,14 @@ class ExhibitSection(object):
                 SimpleTerm(3, 3, u"3.0.0"),
             ])
         ),
+        schema.Bool(
+            __name__='exhibit.ieForceExhibit2',
+            title=_(u"Force Exhibit 2 for Internet Explorer"),
+            description=_(u"force Simile Exhibit 2 for "
+                          "Internet Explorer users as Simile Exhibit 3 is not "
+                          "stable on this browser, yet. "
+                          "Leave this option selected if you're unsure."),
+            required=False,
+            default=True
+        )
     )

@@ -16,17 +16,25 @@ class View(BrowserView):
     """
     def __init__(self, context, request):
         super(View, self).__init__(context, request)
+        self._settings = None
         self._accessor = None
         self._available = None
         self._bundle = None
         self._exhibit3 = None
 
     @property
-    def siteProperties(self):
+    def settings(self):
         """ Persistent utility for site_properties
         """
-        ds = queryUtility(IDavizSettings)
-        return ds.settings if ds else {}
+        if self._settings is None:
+            ds = queryUtility(IDavizSettings)
+            settings = ds.settings if ds else {}
+            self._settings = {
+                'version': settings.get('exhibit.framework', 3),
+                'ieExhibit2': settings.get(
+                    'exhibit.ieForceExhibit2', True)
+            }
+        return self._settings
 
     @property
     def accessor(self):
@@ -72,16 +80,22 @@ class View(BrowserView):
             return self._exhibit3
 
         # Force Exhibit 2 for IE as Exhibit 3 is not supported yet
-        if 'MSIE ' in getattr(self.request, 'HTTP_USER_AGENT', ''):
+        if (self.settings['ieExhibit2'] and
+            'MSIE ' in getattr(self.request, 'HTTP_USER_AGENT', '')):
             self._exhibit3 = False
             return self._exhibit3
 
         # Get Exhibit version from @@daviz-settings
-        version = self.siteProperties.get('exhibit.framework', 3)
-        if int(version) == 3:
+        try:
+            version = int(self.settings['version'])
+        except Exception:
+            version = 3
+
+        if version == 3:
             self._exhibit3 = True
         else:
             self._exhibit3 = False
+
         return self._exhibit3
 
     @property
