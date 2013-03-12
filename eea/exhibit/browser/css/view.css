@@ -43,6 +43,7 @@ span.exhibit-cloudFacet-value {
 img.exhibit-facet-header-collapse {
   float: left;
   padding: 0.9em 0.5em;
+  background-color: #777C1F;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b1c748), to(#777c1f));
   background-image: -webkit-linear-gradient(center top , #b1c748, #777c1f);
   background-image: -moz-linear-gradient(center top , #b1c748, #777c1f);
