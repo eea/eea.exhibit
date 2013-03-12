@@ -1,10 +1,15 @@
 """ Browser views
 """
 import json
-from zope.component import queryAdapter
+import logging
+from zope.component import queryAdapter, queryUtility
 from Products.Five.browser import BrowserView
 from eea.app.visualization.interfaces import IVisualizationConfig
 from eea.app.visualization.zopera import getToolByName
+from eea.app.visualization.zopera import IPropertiesTool
+from eea.app.visualization.interfaces import IDavizSettings
+
+logger = logging.getLogger('eea.exhibit')
 
 class View(BrowserView):
     """ Custom header
@@ -14,6 +19,14 @@ class View(BrowserView):
         self._accessor = None
         self._available = None
         self._bundle = None
+        self._exhibit3 = None
+
+    @property
+    def siteProperties(self):
+        """ Persistent utility for site_properties
+        """
+        ds = queryUtility(IDavizSettings)
+        return ds.settings if ds else {}
 
     @property
     def accessor(self):
@@ -50,6 +63,46 @@ class View(BrowserView):
         else:
             self._bundle = True
         return json.dumps(self._bundle)
+
+    @property
+    def exhibit3(self):
+        """ Browser is Internet Explorer
+        """
+        if self._exhibit3 is not None:
+            return self._exhibit3
+
+        # Force Exhibit 2 for IE as Exhibit 3 is not supported yet
+        if 'MSIE ' in getattr(self.request, 'HTTP_USER_AGENT', ''):
+            self._exhibit3 = False
+            return self._exhibit3
+
+        # Get Exhibit version from @@daviz-settings
+        version = self.siteProperties.get('exhibit.framework', 3)
+        if int(version) == 3:
+            self._exhibit3 = True
+        else:
+            self._exhibit3 = False
+        return self._exhibit3
+
+    @property
+    def gmapkey(self):
+        """ Get Google Maps key from
+            portal_properties.geographical_properties.google_key
+        """
+        ptool = queryUtility(IPropertiesTool)
+        props = getattr(ptool, 'geographical_properties', None)
+        if callable(props):
+            try:
+                props = props(context=self.context, request=self.request)
+            except Exception, err:
+                logger.debug(err)
+
+        if getattr(props, 'getProperty', None):
+            key = props.getProperty('google_key', '')
+        else:
+            key = getattr(props, 'google_key', '')
+
+        return key
 
     @property
     def sources(self):

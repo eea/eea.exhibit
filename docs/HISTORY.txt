@@ -3,6 +3,15 @@ Changelog
 
 7.1-dev - (unreleased)
 ----------------------
+* Feature: Update Simile Exhibit 2.2 Map Extenstion to use Google Maps v3
+  [voineali refs #14106]
+* Bug fix: Force Simile Exhibit 2.2 if browser is Internet Explorer as
+  Simile Exhibit 3.0 is not stable for IE
+  [voineali refs #14106]
+* Feature: Added Simile Exhibit section within Daviz Visualization Control Panel
+  and allow Plone admins to select which version of Simile Exhibit
+  to use (2.2.0 or 3.0.0. Default 3.0.0)
+  [voineali refs #14106]
 * Change: Moved eea.exhibit specific code from eea.app.visualization to this
   package and load exhibit API only if there is at least one Exhibit
   Visualization enabled

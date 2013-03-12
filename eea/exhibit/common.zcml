@@ -7,6 +7,7 @@
 
   <include package=".babel" />
   <include package=".browser" />
+  <include package=".controlpanel" />
   <include package=".facets" />
   <include package=".simile" />
   <include package=".views" />

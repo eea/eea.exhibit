@@ -1,17 +1,19 @@
-<tal:exhibit tal:condition="view/available" tal:define="bundle view/bundle">
+<tal:exhibit tal:condition="view/available"
+  tal:define="bundle view/bundle">
 
  <!-- Custom babel-translators -->
   <link rel="exhibit/babel-translator"
     tal:attributes="href string:${here/absolute_url}/babel-translator" />
 
   <!-- Related items merged JSON with own JSON -->
-  <link rel="exhibit-data" type="application/json"
-    tal:attributes="href string:${here/absolute_url}/daviz.json" />
+  <link type="application/json" tal:attributes="
+      rel python:'exhibit-data' if view.exhibit3 else 'exhibit/data';
+      href string:${here/absolute_url}/daviz.json" />
 
   <!-- External sources JSONs -->
     <tal:additional repeat="source python:view.sources">
-    <link rel="exhibit-data"
-      tal:attributes="
+    <link tal:attributes="
+      rel python:'exhibit-data' if view.exhibit3 else 'exhibit/data';
       type string:application/${source/type};
       href string:${source/name};
       data-ex-converter python:source.get('converter', None) or None;" />
@@ -25,13 +27,23 @@
   //-->
   </script>
 
-  <!-- XXX Dynamically insert these scripts from pluggable visualization library -->
-  <script type="text/javascript"
+  <!-- Exhibit API -->
+  <script type="text/javascript" tal:condition="view/exhibit3"
     tal:attributes="src string:++resource++eea.simile.exhibit/exhibit-api.js?bundle=$bundle"></script>
-  <link rel="exhibit-extension" type="text/javascript"
+  <script type="text/javascript" tal:condition="not:view/exhibit3"
+    tal:attributes="src string:++resource++eea.simile.exhibit2/exhibit-api.js?bundle=$bundle"></script>
+
+  <!-- Exhibit Timeline Extension -->
+  <link rel="exhibit-extension" type="text/javascript" tal:condition="view/exhibit3"
     tal:attributes="href string:++resource++eea.simile.exhibit/extensions/time/time-extension.js?bundle=$bundle" />
-  <link rel="exhibit-extension" type="text/javscript"
+  <script type="text/javascript" tal:condition="not:view/exhibit3"
+    tal:attributes="src string:++resource++eea.simile.exhibit2/extensions/time/time-extension.js?bundle=$bundle"></script>
+
+  <!-- Exhibit Map Extension -->
+  <link rel="exhibit-extension" type="text/javascript" tal:condition="view/exhibit3"
     tal:attributes="href string:++resource++eea.simile.exhibit/extensions/map/map-extension.js?service=google&bundle=$bundle" />
+  <script type="text/javascript" tal:condition="not:view/exhibit3"
+    tal:attributes="src string:++resource++eea.simile.exhibit2/extensions/map/map-extension.js?service=google&bundle=$bundle"></script>
 
   <script type="text/javascript">
   <!--
