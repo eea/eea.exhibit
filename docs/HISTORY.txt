@@ -1,8 +1,8 @@
 Changelog
 =========
 
-7.1-dev - (unreleased)
-----------------------
+7.1 - (2013-03-15)
+------------------
 * Feature: Update Simile Exhibit 2.2 Map Extenstion to use Google Maps v3
   [voineali refs #14106]
 * Bug fix: Force Simile Exhibit 2.2 if browser is Internet Explorer as
