@@ -1,6 +1,9 @@
 Changelog
 =========
 
+7.2-dev - (unreleased)
+----------------------
+
 7.1 - (2013-03-15)
 ------------------
 * Feature: Update Simile Exhibit 2.2 Map Extenstion to use Google Maps v3
