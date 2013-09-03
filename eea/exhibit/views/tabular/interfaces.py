@@ -88,6 +88,22 @@ class IExhibitTabularEdit(Interface):
         default=u"1"
     )
 
+    ex_paginate = schema.Bool(
+        title=_(u"Paginate"),
+        description=_(u"Group results into pages, that can be navigated"
+                      " backward or forward"),
+        required=False,
+        default=False
+    )
+
+    ex_pageSize = schema.Int(
+        title=_(u"Page size"),
+        description=_(u"Number of results to show on each page, if "
+                      "Paginate = true"),
+        required=False,
+        default=20
+    )
+
     ex_cellSpacing = schema.Int(
         title=_(u"Cell spacing"),
         description=_(u"whatever you would normally use to set the cell "
