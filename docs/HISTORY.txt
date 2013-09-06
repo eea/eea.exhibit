@@ -1,6 +1,9 @@
 Changelog
 =========
 
+7.3-dev - (unreleased)
+----------------------
+
 7.2 - (2013-09-06)
 ------------------
 * Feature: Added possibility to configure pagination for tabular view
