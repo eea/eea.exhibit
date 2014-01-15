@@ -12,8 +12,8 @@ DavizEdit.Exhibit = function(context, options){
   self.context = context;
 
   self.settings = {
-    more: 'Advanced settings',
-    less: 'Basic settings'
+    more: 'Show advanced settings',
+    less: 'Hide advanced settings'
   };
 
   if(options){

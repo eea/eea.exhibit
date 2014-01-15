@@ -3,6 +3,8 @@ Changelog
 
 7.3-dev - (unreleased)
 ----------------------
+* Change: Update Advanced settings button labels
+  [avoinea]
 
 7.2 - (2013-09-06)
 ------------------
