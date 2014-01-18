@@ -5,6 +5,8 @@ Changelog
 ----------------------
 * Change: Update Advanced settings button labels
   [avoinea]
+* Feature: adding Sphinx-generated documentation in Page Template format
+  [batradav refs #9502]
 
 7.2 - (2013-09-06)
 ------------------
