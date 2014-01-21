@@ -3,6 +3,8 @@ Changelog
 
 7.3-dev - (unreleased)
 ----------------------
+* Bug fix: removed wrongly added blockquotes within README.rst
+  [ichim-david refs #18064]
 * Change: Update Advanced settings button labels
   [avoinea]
 * Feature: adding Sphinx-generated documentation in Page Template format
