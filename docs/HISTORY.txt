@@ -1,8 +1,8 @@
 Changelog
 =========
 
-7.3-dev - (unreleased)
-----------------------
+7.3 - (2014-01-22)
+------------------
 * Bug fix: removed wrongly added blockquotes within README.rst
   [ichim-david refs #18064]
 * Change: Update Advanced settings button labels
