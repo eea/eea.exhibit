@@ -1,6 +1,9 @@
 Changelog
 =========
 
+7.4-dev - (unreleased)
+----------------------
+
 7.3 - (2014-01-22)
 ------------------
 * Bug fix: removed wrongly added blockquotes within README.rst
