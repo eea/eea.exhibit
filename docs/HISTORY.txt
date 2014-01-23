@@ -1,6 +1,9 @@
 Changelog
 =========
 
+7.5-dev - (unreleased)
+----------------------
+
 7.4 - (2014-01-23)
 ------------------
 * Change: Rerelease broken egg
