@@ -3,6 +3,8 @@ Changelog
 
 7.4-dev - (unreleased)
 ----------------------
+* Change: Rerelease broken egg
+  [ghicaale refs #17959]
 
 7.3 - (2014-01-22)
 ------------------
