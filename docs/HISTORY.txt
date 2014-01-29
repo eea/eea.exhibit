@@ -3,6 +3,10 @@ Changelog
 
 7.5-dev - (unreleased)
 ----------------------
+* Bug fix: Workaround for exhibit loosing the hashbang when applying filter
+  [olimpiurob #17233]
+* Bug fix: Fixed exhibit 2.2.0 js syntax error manifesting in IE8
+  [olimpiurob #17233]
 
 7.4 - (2014-01-23)
 ------------------

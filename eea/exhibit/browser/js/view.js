@@ -56,4 +56,9 @@ jQuery(document).ready(function(){
       index: index
   });
 
+  jQuery(window).on('exhibitStatePushed', function(evt, location_hash) {
+    document.location.hash = location_hash;
+    delete document.location_hash;
+  });
+
 });

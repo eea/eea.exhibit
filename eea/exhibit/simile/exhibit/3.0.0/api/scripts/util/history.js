@@ -222,7 +222,7 @@ Exhibit.History.pushComponentState = function(component, registry, data, subtitl
  * @param {String} subtitle
  */
 Exhibit.History.pushState = function(data, subtitle) {
-    var title, url;
+    var title, url, location_hash;
 
     if (Exhibit.History.enabled) {
         Exhibit.History._state++;
@@ -235,10 +235,14 @@ Exhibit.History.pushState = function(data, subtitle) {
             subtitle !== "") {
             title += " {" + subtitle + "}";
         }
-        
+
+        location_hash = window.location.hash;
         url = Exhibit.History._originalLocation;
         
         History.pushState(data, title, url);
+        // Workaround for #17233; Trigger event after state pushed with
+        // the unaltered url
+        $(window).trigger('exhibitStatePushed', [location_hash]);
     }
 };
 

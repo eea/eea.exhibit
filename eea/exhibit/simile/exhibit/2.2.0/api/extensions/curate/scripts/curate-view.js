@@ -202,7 +202,7 @@ function makeSubmissionHandler(view) {
 }
 
 Exhibit.CurateView.prototype._initializeUI = function() {
-    var submissionLink = $('head link[rel=exhibit/submissions]');
+    var submissionLink = $('head link[rel="exhibit/submissions"]');
     if (submissionLink.length > 0)  {
         var url = submissionLink.attr('href');
         
