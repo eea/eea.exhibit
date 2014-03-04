@@ -50,6 +50,11 @@ recipe to manage your project, you can do this:
 You can skip the ZCML slug if you are going to explicitly include the package
 from another package's configure.zcml file.
 
+Live demos
+==========
+
+* `Basic tutorials <http://www.youtube.com/playlist?list=PLVPSQz7ahsByeq8nVKC7TT9apArEXBrV0>`_
+* `Advanced tutorials <http://www.youtube.com/playlist?list=PLVPSQz7ahsBxbe8pwzFWLQuvDSP9JFn8I>`_
 
 Dependencies
 ============

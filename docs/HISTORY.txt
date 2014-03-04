@@ -3,6 +3,8 @@ Changelog
 
 7.6-dev - (unreleased)
 ----------------------
+* Change: Link video tutorials within documentation
+  [avoinea]
 
 7.5 - (2014-02-03)
 ------------------
