@@ -60,9 +60,19 @@ jQuery.fn.EEAExhibit = function(options){
   });
 };
 
+function addTutorials(){
+    jQuery(".daviz-edit-fieldset:has(div[id*=ex_])").find("eea-tutorial").remove();
+    jQuery(".daviz-edit-fieldset:has(div[id*=ex_])").prepend(
+        jQuery("<div>")
+            .addClass("eea-tutorial")
+            .css("float","left")
+            .css("margin-left","0")
+            .attr("tutorial","exhibit"))
+}
 
 jQuery(document).ready(function(){
   // On init
+  addTutorials();
   jQuery('.daviz-edit-fieldset:has(div[id*=ex_])').EEAExhibit();
   jQuery('.daviz-facet-edit:has(div[id*=ex_])').EEAExhibit({
     more: 'More options',
@@ -71,6 +81,7 @@ jQuery(document).ready(function(){
 
   // On refresh
   jQuery(document).bind(DavizEdit.Events.views.refreshed, function(evt, data){
+    addTutorials();
     jQuery('.daviz-edit-fieldset:has(div[id*=ex_])').EEAExhibit();
   });
 
