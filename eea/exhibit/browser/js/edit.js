@@ -67,7 +67,12 @@ function addTutorials(){
             .addClass("eea-tutorial")
             .css("float","left")
             .css("margin-left","0")
-            .attr("tutorial","exhibit"))
+            .css("display", "block")
+            .css("margin-bottom", "20px")
+            .css("margin-top", "10px")
+            .css("font-size", "16px")
+            .attr("tutorial","exhibit")
+            .attr("message", "Configure exhibit visualization or"))
 }
 
 jQuery(document).ready(function(){
