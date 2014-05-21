@@ -72,7 +72,7 @@ function addTutorials(){
             .css("margin-top", "10px")
             .css("font-size", "16px")
             .attr("tutorial","exhibit")
-            .attr("message", "Configure exhibit visualization or"))
+            .attr("message", "Configure exhibit visualization or"));
 }
 
 jQuery(document).ready(function(){
