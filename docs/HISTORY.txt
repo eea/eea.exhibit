@@ -3,6 +3,8 @@ Changelog
 
 7.7-dev - (unreleased)
 ----------------------
+* Feature: Updated tutorial link for exhibit edit page
+  [szabozo0 refs #18400]
 
 7.6 - (2014-03-10)
 ------------------
