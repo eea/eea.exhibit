@@ -3,7 +3,9 @@
   columns python:view.columns"
   tal:condition="thumbnail" i18n:domain="eea">
 
-<div ex:role="view"
+<div
+  xmlns:ex="http://simile.mit.edu/2006/11/exhibit#"
+  ex:role="view"
   ex:viewClass="Thumbnail">
   <div ex:role="lens" class="daviz-thumbnail-lens">
     <img tal:attributes="ex:src-content thumbnail" />
