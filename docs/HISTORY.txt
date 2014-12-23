@@ -1,6 +1,9 @@
 Changelog
 =========
 
+7.9-dev - (unreleased)
+----------------------
+
 7.8 - (2014-12-23)
 ------------------
 * Bug fix: Fixed exhibit views to work with Chameleon
