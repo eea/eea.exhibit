@@ -28,5 +28,10 @@
 
   <browser:resource name="eea.exhibit.timeline.png" file="timeline.png" />
   <browser:resource name="daviz.timeline.preview.png" file="preview.png" />
+  <browser:page name="daviz.timeline.preview.png"
+    for="zope.interface.Interface"
+    class="eea.app.visualization.views.preview.PreviewImage"
+    permission="zope2.View"
+    />
 
 </configure>

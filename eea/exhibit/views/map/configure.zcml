@@ -27,6 +27,12 @@
     />
 
   <browser:resource name="eea.exhibit.map.png" file="map.png" />
+
   <browser:resource name="daviz.map.preview.png" file="preview.png" />
+  <browser:page name="daviz.map.preview.png"
+    for="zope.interface.Interface"
+    class="eea.app.visualization.views.preview.PreviewImage"
+    permission="zope2.View"
+    />
 
 </configure>

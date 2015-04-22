@@ -28,5 +28,10 @@
 
   <browser:resource name="eea.exhibit.tabular.png" file="tabular.png" />
   <browser:resource name="daviz.tabular.preview.png" file="preview.png" />
+  <browser:page name="daviz.tabular.preview.png"
+    for="zope.interface.Interface"
+    class="eea.app.visualization.views.preview.PreviewImage"
+    permission="zope2.View"
+    />
 
 </configure>
