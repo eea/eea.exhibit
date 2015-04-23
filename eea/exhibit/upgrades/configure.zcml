@@ -3,6 +3,18 @@
   xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
   i18n_domain="eea">
 
+  <genericsetup:upgradeSteps
+    source="6.2"
+    destination="8.0"
+    profile="eea.exhibit:default">
+
+    <genericsetup:upgradeStep
+      title="Cleanup fallback images from ZODB"
+      handler="eea.exhibit.upgrades.evolve80.cleanup_fallback_images"
+      />
+
+  </genericsetup:upgradeSteps>
+
   <!-- 6.0 => 6.2 -->
   <genericsetup:upgradeSteps
     source="6.0"

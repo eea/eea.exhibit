@@ -3,6 +3,8 @@ Changelog
 
 8.0.dev0 - (unreleased)
 -----------------------
+* Upgrade step: Within "Plone > Site setup > Add-ons" click on
+  upgrade button available for eea.exhibit
 * Cleanup: Removed fallback images from ZODB
   [voineali refs #24901]
 
