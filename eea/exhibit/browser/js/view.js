@@ -42,6 +42,9 @@ jQuery(document).ready(function(){
 
   var index = 0;
   var api = jQuery("ul.chart-tabs").data('tabs');
+  if (!api) {
+    return;
+  }
   jQuery.each(api.getTabs(), function(idx, tab){
     if(jQuery(tab).attr('href') == window.location.hash){
       index = idx;
