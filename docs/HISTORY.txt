@@ -1,8 +1,8 @@
 Changelog
 =========
 
-8.0.dev0 - (unreleased)
------------------------
+8.0 - (2015-05-05)
+------------------
 * Bug fix: check if tab api is available before attempting to click on first
   chart tab. This way we avoid a js error when no charts are added.
   [ichimdav refs #22901]
