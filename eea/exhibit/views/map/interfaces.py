@@ -268,7 +268,7 @@ class IExhibitMapEdit(Interface):
         default=6
     )
 
-    ex_pinWidth =  schema.Int(
+    ex_pinWidth = schema.Int(
         title=_(u"Pin width"),
         description=_(u"width of pins of map markers (in pixels)"),
         required=False,

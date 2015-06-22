@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-
-import sys
 import cgi
 import simplejson
 import os.path
@@ -10,19 +7,19 @@ import portalocker
 config = dict(
 
     # enter a unique admin password for this exhibit
-    password = 'MY_PASSWORD ',
+    password='MY_PASSWORD ',
 
     # json file the exhibit database is stored in
-    database_path = '../apartments.js',
+    database_path='../apartments.js',
 
     # json file to store unapproved submissions    
-    submissions_path = 'submissions.js',
+    submissions_path='submissions.js',
     
     # maximum number of unapproved submissions
-    max_submissions = 100,
+    max_submissions=100,
     
     # maximum number of characters in any submission field
-    max_field_size = 250
+    max_field_size=250
 )
 
 # HTTP responses
@@ -86,6 +83,7 @@ def save_database(data):
 
 class ExhibitError(Exception):
     def __init__(self, value):
+        super(ExhibitError, self).__init__(value)
         self.value = value
     def __str__(self):
         return repr(self.value)

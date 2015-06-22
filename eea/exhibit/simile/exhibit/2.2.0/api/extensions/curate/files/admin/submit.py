@@ -10,7 +10,7 @@ def validate_message(msg):
     edits = msg['edits']
     if not edits:
         raise ExhibitError('no edits were given')
-    
+
     for i, edit in enumerate(edits):
         label = edit['label']
         if not label:
@@ -26,7 +26,7 @@ def submission_handler(database, submissions, message):
     validate_message(message)
     submissions.append(message)
     exhibit.save_submissions(submissions)
-    
-    return { 'status': 'ok' }
+
+    return {'status':'ok'}
 
 exhibit.execute_handler(submission_handler)

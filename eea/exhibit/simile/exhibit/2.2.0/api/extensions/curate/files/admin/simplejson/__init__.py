@@ -38,12 +38,12 @@ Pretty printing::
     >>> import simplejson
     >>> print simplejson.dumps({'4': 5, '6': 7}, sort_keys=True, indent=4)
     {
-        "4": 5, 
+        "4": 5,
         "6": 7
     }
 
 Decoding JSON::
-    
+
     >>> import simplejson
     >>> simplejson.loads('["foo", {"bar":["baz", null, 1.0, 2]}]')
     [u'foo', {u'bar': [u'baz', None, 1.0, 2]}]
@@ -61,27 +61,27 @@ Specializing JSON object decoding::
     ...     if '__complex__' in dct:
     ...         return complex(dct['real'], dct['imag'])
     ...     return dct
-    ... 
+ 
     >>> simplejson.loads('{"__complex__": true, "real": 1, "imag": 2}',
     ...     object_hook=as_complex)
     (1+2j)
 
 Extending JSONEncoder::
-    
+ 
     >>> import simplejson
     >>> class ComplexEncoder(simplejson.JSONEncoder):
     ...     def default(self, obj):
     ...         if isinstance(obj, complex):
     ...             return [obj.real, obj.imag]
     ...         return simplejson.JSONEncoder.default(self, obj)
-    ... 
+
     >>> dumps(2 + 1j, cls=ComplexEncoder)
     '[2.0, 1.0]'
     >>> ComplexEncoder().encode(2 + 1j)
     '[2.0, 1.0]'
     >>> list(ComplexEncoder().iterencode(2 + 1j))
     ['[', '2.0', ', ', '1.0', ']']
-    
+
 
 Note that the JSON produced by this module's default settings
 is a subset of YAML, so it may be used as a serializer for that as well.
@@ -92,8 +92,8 @@ __all__ = [
     'JSONDecoder', 'JSONEncoder',
 ]
 
-from decoder import JSONDecoder
-from encoder import JSONEncoder
+from simplejson.decoder import JSONDecoder
+from simplejson.encoder import JSONEncoder
 
 _default_encoder = JSONEncoder(
     skipkeys=False,
@@ -113,7 +113,7 @@ def dump(obj, fp, skipkeys=False, ensure_ascii=True, check_circular=True,
     ``.write()``-supporting file-like object).
 
     If ``skipkeys`` is ``True`` then ``dict`` keys that are not basic types
-    (``str``, ``unicode``, ``int``, ``long``, ``float``, ``bool``, ``None``) 
+    (``str``, ``unicode``, ``int``, ``long``, ``float``, ``bool``, ``None``)
     will be skipped instead of raising a ``TypeError``.
 
     If ``ensure_ascii`` is ``False``, then the some chunks written to ``fp``
@@ -170,7 +170,7 @@ def dumps(obj, skipkeys=False, ensure_ascii=True, check_circular=True,
     Serialize ``obj`` to a JSON formatted ``str``.
 
     If ``skipkeys`` is ``True`` then ``dict`` keys that are not basic types
-    (``str``, ``unicode``, ``int``, ``long``, ``float``, ``bool``, ``None``) 
+    (``str``, ``unicode``, ``int``, ``long``, ``float``, ``bool``, ``None``)
     will be skipped instead of raising a ``TypeError``.
 
     If ``ensure_ascii`` is ``False``, then the return value will be a
@@ -233,7 +233,7 @@ def load(fp, encoding=None, cls=None, object_hook=None, **kw):
     result of any object literal decode (a ``dict``). The return value of
     ``object_hook`` will be used instead of the ``dict``. This feature
     can be used to implement custom decoders (e.g. JSON-RPC class hinting).
-    
+
     To use a custom ``JSONDecoder`` subclass, specify it with the ``cls``
     kwarg.
     """

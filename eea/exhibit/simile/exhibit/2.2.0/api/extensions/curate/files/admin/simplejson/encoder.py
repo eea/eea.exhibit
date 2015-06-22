@@ -70,7 +70,7 @@ def encode_basestring_ascii(s):
                 s2 = 0xdc00 | (n & 0x3ff)
                 return '\\u%04x\\u%04x' % (s1, s2)
     return '"' + str(ESCAPE_ASCII.sub(replace, s)) + '"'
-        
+
 try:
     encode_basestring_ascii = _speedups.encode_basestring_ascii
     _need_utf8 = True
@@ -82,7 +82,7 @@ class JSONEncoder(object):
     Extensible JSON <http://json.org> encoder for Python data structures.
 
     Supports the following objects and types by default:
-    
+
     +-------------------+---------------+
     | Python            | JSON          |
     +===================+===============+
@@ -147,7 +147,7 @@ class JSONEncoder(object):
         representation you should specify (',', ':') to eliminate whitespace.
 
         If encoding is not None, then all input strings will be
-        transformed into unicode using that encoding prior to JSON-encoding. 
+        transformed into unicode using that encoding prior to JSON-encoding.
         The default is UTF-8.
         """
 
@@ -319,7 +319,7 @@ class JSONEncoder(object):
 
         For example, to support arbitrary iterators, you could
         implement default like this::
-            
+
             def default(self, o):
                 try:
                     iterable = iter(o)
@@ -342,7 +342,7 @@ class JSONEncoder(object):
         if isinstance(o, basestring):
             if isinstance(o, str):
                 _encoding = self.encoding
-                if (_encoding is not None 
+                if (_encoding is not None
                         and not (_encoding == 'utf-8' and _need_utf8)):
                     o = o.decode(_encoding)
             return encode_basestring_ascii(o)
@@ -356,9 +356,9 @@ class JSONEncoder(object):
         """
         Encode the given object and yield each string
         representation as available.
-        
+
         For example::
-            
+
             for chunk in JSONEncoder().iterencode(bigobject):
                 mysocket.write(chunk)
         """
