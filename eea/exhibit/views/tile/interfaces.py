@@ -149,7 +149,7 @@ class IExhibitTileEdit(Interface):
         default=20
     )
 
-    ex_pageWindow =  schema.Int(
+    ex_pageWindow = schema.Int(
         title=_(u"Page window"),
         description=_(u"page window"),
         required=False,

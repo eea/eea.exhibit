@@ -11,7 +11,7 @@ class IExhibitThumbnailView(IVisualizationView):
 class IExhibitThumbnailEdit(Interface):
     """ Exhibit thumbnail edit
     """
-    thumbnail =  schema.Choice(
+    thumbnail = schema.Choice(
         title=u'Thumbnail',
         description=u"Specify which column should be used to get " \
                                                     "thumbnail url.",

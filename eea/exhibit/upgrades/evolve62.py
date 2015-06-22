@@ -5,7 +5,7 @@ from zope.component import getMultiAdapter
 
 def migrate_imagecharts(context):
     """ Migrate exhibit image charts"""
-    ctool = getToolByName (context, 'portal_catalog')
+    ctool = getToolByName(context, 'portal_catalog')
     brains = ctool.unrestrictedSearchResults(portal_type='DavizVisualization')
     for brain in brains:
         visualization = brain.getObject()
@@ -16,7 +16,7 @@ def migrate_imagecharts(context):
             if tab['name'].startswith('daviz.'):
                 previewname = tab['name'] + '.preview.png'
                 if not visualization.get(previewname, None):
-                    img = context.restrictedTraverse('++resource++' + 
+                    img = context.restrictedTraverse('++resource++' +
                         str(previewname))
                     visualization.invokeFactory('Image',
                         id=previewname,

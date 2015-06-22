@@ -37,7 +37,6 @@ class Scanner(object):
         match = self.scanner.scanner(string, idx).match
         actions = self.actions
         lastend = idx
-        end = len(string)
         while True:
             m = match()
             if m is None:
@@ -54,7 +53,7 @@ class Scanner(object):
                     match = self.scanner.scanner(string, matchend).match
                 yield rval, matchend
             lastend = matchend
-            
+
 def pattern(pattern, flags=FLAGS):
     def decorator(fn):
         fn.pattern = pattern
