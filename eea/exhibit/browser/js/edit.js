@@ -1,8 +1,8 @@
 if(window.DavizEdit === undefined){
   var DavizEdit = {'version': 'eea.exhibit'};
-  DavizEdit.Events = {};
 }
 
+DavizEdit.Events = DavizEdit.Events || {};
 DavizEdit.Events.exhibit = {
     initialized: 'exhibit-initialized'
 };
