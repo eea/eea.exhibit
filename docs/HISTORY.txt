@@ -1,6 +1,9 @@
 Changelog
 =========
 
+8.3.dev0 - (unreleased)
+-----------------------
+
 8.2 - (2015-10-05)
 ------------------
 * Change: check if DavizEdit.Events exists before overriding it withing js files
