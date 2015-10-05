@@ -1,8 +1,8 @@
 Changelog
 =========
 
-8.2.dev0 - (unreleased)
------------------------
+8.2 - (2015-10-05)
+------------------
 * Change: check if DavizEdit.Events exists before overriding it withing js files
   in case DavizEdit isn't found and is constructed
   [ichimdav refs #27220]
