@@ -3,6 +3,8 @@ Changelog
 
 8.3.dev0 - (unreleased)
 -----------------------
+* Change: Set gmap key
+  [claytonc]
 
 8.2 - (2015-10-05)
 ------------------
