@@ -1,5 +1,6 @@
 <tal:exhibit tal:condition="view/available"
-  tal:define="bundle view/bundle">
+  tal:define="bundle view/bundle;
+              gmapkey view/gmapkey">
 
  <!-- Custom babel-translators -->
   <link rel="exhibit/babel-translator"
@@ -29,9 +30,9 @@
 
   <!-- Exhibit API -->
   <script type="text/javascript" tal:condition="view/exhibit3"
-    tal:attributes="src string:++resource++eea.simile.exhibit3/exhibit-api.js?bundle=$bundle"></script>
+    tal:attributes="src string:++resource++eea.simile.exhibit3/exhibit-api.js?bundle=$bundle&gmapKey=$gmapkey"></script>
   <script type="text/javascript" tal:condition="not:view/exhibit3"
-    tal:attributes="src string:++resource++eea.simile.exhibit2/exhibit-api.js?bundle=$bundle"></script>
+    tal:attributes="src string:++resource++eea.simile.exhibit2/exhibit-api.js?bundle=$bundle&gmapKey=$gmapkey"></script>
 
   <!-- Exhibit Timeline Extension -->
   <link rel="exhibit-extension" type="text/javascript" tal:condition="view/exhibit3"
