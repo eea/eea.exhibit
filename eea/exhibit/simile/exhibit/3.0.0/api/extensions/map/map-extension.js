@@ -97,11 +97,11 @@
         if (Exhibit.MapExtension.params.service === "google2" &&
                    typeof GMap2 === "undefined") {
             if (typeof Exhibit.params.gmapKey !== "undefined") {
-	            scriptURLs.push("http://maps.google.com/maps?file=api&v=2&sensor=false&callback=Exhibit.MapExtension.noop&async=2&key=" + Exhibit.params.gmapKey);
+                scriptURLs.push("//maps.google.com/maps?file=api&v=2&sensor=false&callback=Exhibit.MapExtension.noop&async=2&key=" + Exhibit.params.gmapKey);
             } else if (typeof Exhibit.MapExtension.params.gmapKey !== "undefined") {
-	            scriptURLs.push("http://maps.google.com/maps?file=api&v=2&sensor=false&callback=Exhibit.MapExtension.noop&async=2&key=" + Exhibit.MapExtension.params.gmapKey);
+                scriptURLs.push("//maps.google.com/maps?file=api&v=2&sensor=false&callback=Exhibit.MapExtension.noop&async=2&key=" + Exhibit.MapExtension.params.gmapKey);
             } else {
-	            scriptURLs.push("http://maps.google.com/maps?file=api&v=2&sensor=false&callback=Exhibit.MapExtension.noop&async=2");
+                scriptURLs.push("//maps.google.com/maps?file=api&v=2&sensor=false&callback=Exhibit.MapExtension.noop&async=2");
             }
             if (!Exhibit.MapExtension.params.bundle) {
                 javascriptFiles.push("google-maps-v2-view.js");
@@ -110,7 +110,7 @@
             // if author is referring to an unknown service, default to google
 	        if (typeof google === "undefined" ||
                 (typeof google !== "undefined" && typeof google.map === "undefined")) {
-	            scriptURLs.push("http://maps.googleapis.com/maps/api/js?sensor=false&callback=Exhibit.MapExtension.noop");
+                scriptURLs.push("//maps.googleapis.com/maps/api/js?sensor=false&callback=Exhibit.MapExtension.noop&key=" + Exhibit.params.gmapKey);
                 if (!Exhibit.MapExtension.params.bundle) {
                     javascriptFiles.push("map-view.js");
                 }
