@@ -13,7 +13,7 @@ setup(name=NAME,
       description=(
           "EEA Exhibit provides Simile Widgets Exhibit JS libraries as Zope 3 "
           "resources."),
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       classifiers=[
           "Framework :: Zope2",
