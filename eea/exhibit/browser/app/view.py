@@ -91,10 +91,9 @@ class View(BrowserView):
         except Exception:
             version = 3
 
+        self._exhibit3 = False
         if version == 3:
             self._exhibit3 = True
-        else:
-            self._exhibit3 = False
 
         return self._exhibit3
 

@@ -14,32 +14,33 @@ class Translator(BrowserView):
         if self.request:
             kwargs.update(self.request.form)
 
+        abs_url = self.context.absolute_url()
         url = kwargs.get('url', '')
         if not url:
-            logger.exception('Invalid URL: %s', url)
+            logger.warn('Empty Babel URL: "%s" at "%s"', url, abs_url)
             return ""
 
         reader = kwargs.get('reader', '')
         reader = queryUtility(IBabelReader, name=reader)
         if not reader:
-            logger.exception('Unknown babel reader: %s', reader)
+            logger.warn('Unknown babel reader: "%s" at "%s"', reader, abs_url)
             return ""
 
         write = kwargs.get('writer', '')
         writer = queryUtility(IBabelWriter, name=write)
         if not writer:
-            logger.exception('Unknown babel writer: %s', writer)
+            logger.warn('Unknown babel writer: "%s" at "%s"', writer, abs_url)
             return ""
 
         try:
             items = reader(url)
-        except Exception, err:
+        except Exception as err:
             logger.exception(err)
             return ""
 
         try:
             output = writer(items)
-        except Exception, err:
+        except Exception as err:
             logger.exception(err)
             return ""
 
