@@ -1,8 +1,8 @@
 Changelog
 =========
 
-8.4.dev0 - (unreleased)
------------------------
+8.4 - (2016-12-19)
+------------------
 * Bug fix: Make babel related errors more verbose
   [voineali refs #75388]
 
