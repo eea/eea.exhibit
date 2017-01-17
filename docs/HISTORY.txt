@@ -1,8 +1,8 @@
 Changelog
 =========
 
-8.5.dev0 - (unreleased)
------------------------
+8.5 - (2017-01-17)
+------------------
 * Bug fix: Add extras_require to setup.py for zope2 only deployments
   [avoinea]
 
