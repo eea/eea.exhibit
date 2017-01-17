@@ -43,12 +43,15 @@ setup(name=NAME,
       install_requires=[
           'setuptools',
           'rdflib',
-          'eea.app.visualization > 9.3',
+          'eea.app.visualization > 11.0',
           # -*- Extra requirements: -*-
       ],
       extras_require={
           'test': [
               'plone.app.testing',
+              ],
+          'zope2': [
+              'eea.app.visualization [zope2]',
           ]
       },
       entry_points="""
