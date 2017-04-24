@@ -1,6 +1,9 @@
 Changelog
 =========
 
+8.7.dev0 - (unreleased)
+-----------------------
+
 8.6 - (2017-04-24)
 ------------------
 * Change: updated package information
