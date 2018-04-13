@@ -1,8 +1,12 @@
 ===========
 EEA Exhibit
 ===========
-.. image:: http://ci.eionet.europa.eu/job/eea/job/eea.exhibit/job/master/badge/icon
-  :target: http://ci.eionet.europa.eu/job/eea/job/eea.exhibit/job/master/display/redirect
+.. image:: https://ci.eionet.europa.eu/buildStatus/icon?job=eea/eea.exhibit/develop
+  :target: https://ci.eionet.europa.eu/job/eea/job/eea.exhibit/job/develop/display/redirect
+  :alt: Develop
+.. image:: https://ci.eionet.europa.eu/buildStatus/icon?job=eea/eea.exhibit/master
+  :target: https://ci.eionet.europa.eu/job/eea/job/eea.exhibit/job/master/display/redirect
+  :alt: Master
 
 EEA Exhibit provides Simile Widgets Exhibit framework integration for
 eea.app.visualization. See eea.daviz package for more details.
