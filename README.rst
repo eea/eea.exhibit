@@ -76,7 +76,7 @@ Latest source code (Zope 2 compatible):
 - `EEA on Github <https://github.com/eea/eea.exhibit>`_
 
 Plone 2 and 3 compatible:
-   https://svn.eionet.europa.eu/repositories/Zope/trunk/eea.exhibit/branches/plone25
+   https://github.com/eea/eea.exhibit/tree/plone25
 
 
 Copyright and license
