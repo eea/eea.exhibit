@@ -13,4 +13,4 @@ Dependencies:
 
    - ElementTree: http://effbot.org/zone/element-index.htm
    - GData Python Client: http://code.google.com/p/gdata-python-client/
-   - simplejson: http://pypi.python.org/pypi/simplejson
+   - simplejson: https://pypi.python.org/pypi/simplejson

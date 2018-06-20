@@ -12,7 +12,7 @@ EEA Exhibit provides Simile Widgets Exhibit framework integration for
 eea.app.visualization. See eea.daviz package for more details.
 
 
-.. image:: http://eea.github.com/_images/eea.daviz.layers.svg
+.. image:: https://eea.github.io/_images/eea.daviz.layers.svg
 
 
 .. contents::
@@ -65,7 +65,7 @@ Dependencies
   - `eea.app.visualization`_
 
 
-.. image:: http://eea.github.com/_images/eea.daviz.dependencies.svg
+.. image:: https://eea.github.io/_images/eea.daviz.dependencies.svg
 
 
 Source code
@@ -98,7 +98,7 @@ Funding
 
 EEA_ - European Environment Agency (EU)
 
-.. _EEA: http://www.eea.europa.eu/
-.. _`eea.app.visualization`: http://eea.github.com/docs/eea.app.visualization
-.. _`plone.recipe.zope2instance`: http://pypi.python.org/pypi/plone.recipe.zope2instance
-.. _`zc.buildout`: http://pypi.python.org/pypi/zc.buildout
+.. _EEA: https://www.eea.europa.eu/
+.. _`eea.app.visualization`: https://eea.github.com/docs/eea.app.visualization
+.. _`plone.recipe.zope2instance`: https://pypi.python.org/pypi/plone.recipe.zope2instance
+.. _`zc.buildout`: https://pypi.python.org/pypi/zc.buildout
