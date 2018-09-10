@@ -1,14 +1,18 @@
 ===========
 EEA Exhibit
 ===========
-.. image:: http://ci.eionet.europa.eu/job/eea/job/eea.exhibit/job/master/badge/icon
-  :target: http://ci.eionet.europa.eu/job/eea/job/eea.exhibit/job/master/display/redirect
+.. image:: https://ci.eionet.europa.eu/buildStatus/icon?job=eea/eea.exhibit/develop
+  :target: https://ci.eionet.europa.eu/job/eea/job/eea.exhibit/job/develop/display/redirect
+  :alt: Develop
+.. image:: https://ci.eionet.europa.eu/buildStatus/icon?job=eea/eea.exhibit/master
+  :target: https://ci.eionet.europa.eu/job/eea/job/eea.exhibit/job/master/display/redirect
+  :alt: Master
 
 EEA Exhibit provides Simile Widgets Exhibit framework integration for
 eea.app.visualization. See eea.daviz package for more details.
 
 
-.. image:: http://eea.github.com/_images/eea.daviz.layers.svg
+.. image:: https://eea.github.io/_images/eea.daviz.layers.svg
 
 
 .. contents::
@@ -61,7 +65,7 @@ Dependencies
   - `eea.app.visualization`_
 
 
-.. image:: http://eea.github.com/_images/eea.daviz.dependencies.svg
+.. image:: https://eea.github.io/_images/eea.daviz.dependencies.svg
 
 
 Source code
@@ -72,7 +76,7 @@ Latest source code (Zope 2 compatible):
 - `EEA on Github <https://github.com/eea/eea.exhibit>`_
 
 Plone 2 and 3 compatible:
-   https://svn.eionet.europa.eu/repositories/Zope/trunk/eea.exhibit/branches/plone25
+   https://github.com/eea/eea.exhibit/tree/plone25
 
 
 Copyright and license
@@ -94,7 +98,7 @@ Funding
 
 EEA_ - European Environment Agency (EU)
 
-.. _EEA: http://www.eea.europa.eu/
-.. _`eea.app.visualization`: http://eea.github.com/docs/eea.app.visualization
-.. _`plone.recipe.zope2instance`: http://pypi.python.org/pypi/plone.recipe.zope2instance
-.. _`zc.buildout`: http://pypi.python.org/pypi/zc.buildout
+.. _EEA: https://www.eea.europa.eu/
+.. _`eea.app.visualization`: https://eea.github.com/docs/eea.app.visualization
+.. _`plone.recipe.zope2instance`: https://pypi.python.org/pypi/plone.recipe.zope2instance
+.. _`zc.buildout`: https://pypi.python.org/pypi/zc.buildout

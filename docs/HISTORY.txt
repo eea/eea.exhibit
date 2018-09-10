@@ -1,8 +1,13 @@
 Changelog
 =========
 
-8.8.dev0 - (unreleased)
+8.9 - (2018-09-07)
 -----------------------
+* Change: updated URLs pointing to eea.europa.eu with https://
+  [alecghica refs #95849]
+
+8.8 - (2017-12-12)
+------------------
 * Change: Replace eeacms/zptlint with eeacms/plone-test:4 zptlint
   [avoinea refs #90415]
 
@@ -162,7 +167,7 @@ Changelog
 * Feature: Made this package Plone independent (Zope2 minimal requirements)
   [voineali refs #5421]
 
-4.5-dev - (unreleased)
+4.5 - (2018-09-07)
 ----------------------
 
 4.4 - (2012-07-13)
